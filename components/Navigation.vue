@@ -13,8 +13,8 @@ const links = [
 <template>
   <nav class="nav">
     <div class="nav-logo">
-      <h1 class="nav-title">
-        <NuxtLink class="nav-title-link" to="/">
+      <h1 class="nav-logo-title">
+        <NuxtLink class="nav-logo-title-link" to="/">
           KOOP PASCALE
         </NuxtLink>
       </h1>
