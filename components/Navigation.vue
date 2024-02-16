@@ -59,6 +59,15 @@
 						{{ link.name }}
 					</NuxtLink>
 				</li>
+				<li class="mobile-nav-list-item">
+					<nuxt-link to="/en">
+						<span>EN&nbsp;</span>
+					</nuxt-link>
+					/
+					<nuxt-link to="/de">
+						<span>&nbsp;DE</span>
+					</nuxt-link>
+				</li>
 			</ul>
 		</div>
 	</nav>
