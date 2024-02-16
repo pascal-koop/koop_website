@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* mobile-navigation */
+.nav {
+  @apply h-16 p-3 flex flex-row justify-between;
+}
+
+.nav-logo {
+  @apply w-4;
+}
+
+.nav-logo-title {
+  @apply text-pretty text-sm italic;
+}
+
+.hamburger {
+  @apply w-16 p-1 cursor-pointer;
+  @apply md:hidden;
+}
+
+/* ! needs color */
+.hamburger-line {
+  @apply h-1 my-1 mx-auto flex left-0;
+}
+
+.line-1 {
+  @apply w-12;
+  transition: all 0.3s;
+}
+
+.line-2 {
+  @apply w-9;
+  transition: all 0.3s;
+}
+
+.line-3 {
+  @apply w-7;
+  transition: all 0.3s;
+}
+
+.hamburger:hover .hamburger-line .active {
+  animation: none;
+}
+
+.active .line-1 {
+  @apply right-[0.75px];
+  transform: rotate(-58deg) translate(-9px, 8px);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* !needs color */
+.mobile-nav {
+  animation: 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 slideInFromLeft;
+  @apply left-0 fixed mt-2  p-14 hidden;
+  @apply md:hidden;
+}
+
+.mobile-nav.active {
+  @apply block mt-12 h-svh w-svw z-10;
+}
