@@ -128,6 +128,7 @@
 	font-style: italic;
 	font-display: swap;
 }
+
 /*rota*/
 @font-face {
 	font-family: 'Rota';
@@ -139,7 +140,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-/* mobile-navigation */
+
 .nav {
 	@apply h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed;
 }
@@ -199,21 +200,42 @@
 	}
 }
 
-/* !needs color */
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 .mobile-nav {
-	animation: 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 slideInFromLeft;
 	@apply left-0 fixed mt-2 hidden p-14;
 	@apply md:hidden;
 }
 
 .mobile-nav.active {
+	animation: slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1);
 	@apply flex flex-col mt-16 h-svh w-svw z-10 bg-bgdark;
 }
 
-.mobile-nav-link-list {
+.mobile-nav-link {
+	@apply hidden;
+}
+.mobile-nav-link.active {
+	animation: slideInFromBottom 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+	@apply flex text-[2.5rem] font-semibold text-textLight;
 }
 
 .mobile-nav-list-item {
 	@apply text-[2.5rem] mt-11 font-semibold text-textLight;
 	font-family: 'Neue Regrade', sans-serif;
+}
+
+.mobile-nav-link-list {
+	.mobile-nav-link-internationalization {
+		@apply flex mt-11;
+	}
 }
