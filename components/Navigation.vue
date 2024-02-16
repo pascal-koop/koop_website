@@ -1,9 +1,9 @@
 <script setup>
 	const links = [
-		{ name: 'STORY', to: '#story-section' },
-		{ name: 'WORKS', to: '#works-section' },
-		{ name: 'EXPERIENCE', to: '#experience-section' },
-		{ name: 'CONTACTS', to: '#contacts-section' }
+		{ name: 'STORY', to: '#story-section', number: 'link-1' },
+		{ name: 'WORKS', to: '#works-section', number: 'link-2' },
+		{ name: 'EXPERIENCE', to: '#experience-section', number: 'link-3' },
+		{ name: 'CONTACTS', to: '#contacts-section', number: 'link-4' }
 	];
 	const openMenu = ref(false);
 
@@ -55,9 +55,25 @@
 					class="mobile-nav-list-item">
 					<NuxtLink
 						:to="link.to"
+						:class="{ active: openMenu }"
 						class="mobile-nav-link">
 						{{ link.name }}
 					</NuxtLink>
+				</li>
+				<li class="mobile-nav-link-internationalization">
+					<nuxt-link
+						to="/en"
+						:class="{ active: openMenu }"
+						class="mobile-nav-link">
+						<span>EN&nbsp;/</span>
+					</nuxt-link>
+
+					<nuxt-link
+						to="/de"
+						:class="{ active: openMenu }"
+						class="mobile-nav-link">
+						<span>&nbsp;DE</span>
+					</nuxt-link>
 				</li>
 			</ul>
 		</div>

@@ -103,6 +103,32 @@
 	font-style: italic;
 	font-display: swap;
 }
+/*bold*/
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/NeueRegrade-Bold.eot');
+	src: url('/fonts/NeueRegrade-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/NeueRegrade-Bold.woff2') format('woff2'), url('/fonts/NeueRegrade-Bold.woff') format('woff'),
+		url('/fonts/NeueRegrade-Bold.ttf') format('truetype'),
+		url('/fonts/NeueRegrade-Bold.svg#NeueRegrade-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/*bold-italic*/
+@font-face {
+	font-family: 'Neue Regrade';
+	src: url('/fonts/NeueRegrade-Bold-Italic.eot');
+	src: url('/fonts/NeueRegrade-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/NeueRegrade-Bold-Italic.woff2') format('woff2'),
+		url('/fonts/NeueRegrade-Bold-Italic.woff') format('woff'),
+		url('/fonts/NeueRegrade-Bold-Italic.ttf') format('truetype'),
+		url('/fonts/NeueRegrade-Bold-Italic.svg#NeueRegrade-Bold-Italic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
 /*rota*/
 @font-face {
 	font-family: 'Rota';
@@ -114,9 +140,9 @@
 	font-style: normal;
 	font-display: swap;
 }
-/* mobile-navigation */
+
 .nav {
-	@apply h-16 p-3 flex flex-row justify-between;
+	@apply h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed;
 }
 
 .nav-logo {
@@ -127,6 +153,8 @@
 	@apply text-pretty;
 
 	a {
+		@apply font-bold italic text-lg;
+		font-family: 'Neue Regrade', sans-serif;
 	}
 }
 
@@ -135,9 +163,8 @@
 	@apply md:hidden;
 }
 
-/* ! needs color */
 .hamburger-line {
-	@apply h-1 my-1 mx-auto flex left-0;
+	@apply h-[.35rem] mt-[.35rem] mx-auto left-0 bg-bgdark;
 }
 
 .line-1 {
@@ -161,7 +188,7 @@
 
 .active .line-1 {
 	@apply right-[0.75px];
-	transform: rotate(-58deg) translate(-9px, 8px);
+	transform: rotate(-58deg) translate(-13px, 10px);
 }
 
 @keyframes slideInFromLeft {
@@ -173,13 +200,42 @@
 	}
 }
 
-/* !needs color */
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 .mobile-nav {
-	animation: 1s cubic-bezier(0.19, 1, 0.22, 1) 0s 1 slideInFromLeft;
-	@apply left-0 fixed mt-2  p-14 hidden;
+	@apply left-0 fixed mt-2 hidden p-14;
 	@apply md:hidden;
 }
 
 .mobile-nav.active {
-	@apply block mt-12 h-svh w-svw z-10;
+	animation: slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1);
+	@apply flex flex-col mt-16 h-svh w-svw z-10 bg-bgdark;
+}
+
+.mobile-nav-link {
+	@apply hidden;
+}
+.mobile-nav-link.active {
+	animation: slideInFromBottom 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+	@apply flex text-[2.5rem] font-semibold text-textLight;
+}
+
+.mobile-nav-list-item {
+	@apply text-[2.5rem] mt-11 font-semibold text-textLight;
+	font-family: 'Neue Regrade', sans-serif;
+}
+
+.mobile-nav-link-list {
+	.mobile-nav-link-internationalization {
+		@apply flex mt-11;
+	}
 }
