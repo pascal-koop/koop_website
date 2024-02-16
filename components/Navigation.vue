@@ -6,15 +6,9 @@ const links = [
   { name: 'CONTACTS', to: '#contacts-section' },
 ]
 const openMenu = ref(false);
-const closeMenu = ref(true);
 
 const toggleMenu = () => {
   openMenu.value = !openMenu.value;
-  console.log(openMenu.value);
-  closeMenu.value = !closeMenu.value;
-  console.log(closeMenu.value);
-
-  //openMenu.value ? closeMenu.value = false : closeMenu.value = true;
 }
 
 </script>
