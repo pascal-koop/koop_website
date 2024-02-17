@@ -243,8 +243,9 @@ body {
 		@apply flex mt-11;
 	}
 }
+
 .introduction {
-	@apply mt-52 ml-5;
+	@apply mt-52 mx-5;
 }
 
 .introduction-chip {
@@ -256,7 +257,7 @@ body {
 	@apply flex flex-col mt-6;
 }
 
-.introduction-title {
+.title {
 	@apply text-[2.75rem] font-bold tracking-wider text-textDark;
 	font-family: 'Neue Regrade', sans-serif;
 }
@@ -281,4 +282,17 @@ body {
 */
 .introduction-arrow-down-svg {
 	@apply mt-7 mb-1;
+}
+
+.story {
+	@apply mx-5;
+}
+
+.story-title {
+	@apply mt-24;
+}
+
+.story-text {
+	@apply mt-14 text-lg leading-relaxed text-textDark;
+	font-family: 'Rota', sans-serif;
 }
