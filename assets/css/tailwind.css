@@ -129,7 +129,7 @@
 	font-display: swap;
 }
 
-/*rota*/
+/*rota-regular*/
 @font-face {
 	font-family: 'Rota';
 	src: url('/fonts/Rota-Regular.eot');
@@ -141,8 +141,12 @@
 	font-display: swap;
 }
 
+body {
+	@apply bg-bglight;
+}
+
 .nav {
-	@apply h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed;
+	@apply h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed top-0;
 }
 
 .nav-logo {
@@ -218,7 +222,7 @@
 
 .mobile-nav.active {
 	animation: slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1);
-	@apply flex flex-col mt-16 h-svh w-svw z-10 bg-bgdark;
+	@apply flex flex-col mt-16 h-svh w-svw z-20 bg-bgdark;
 }
 
 .mobile-nav-link {
@@ -226,7 +230,7 @@
 }
 .mobile-nav-link.active {
 	animation: slideInFromBottom 2.5s cubic-bezier(0.19, 1, 0.22, 1);
-	@apply flex text-[2.5rem] font-semibold text-textLight;
+	@apply flex text-[2.5rem] font-semibold text-textLight relative;
 }
 
 .mobile-nav-list-item {
@@ -238,4 +242,43 @@
 	.mobile-nav-link-internationalization {
 		@apply flex mt-11;
 	}
+}
+.introduction {
+	@apply mt-52 ml-5;
+}
+
+.introduction-chip {
+	font-family: 'Rota', sans-serif;
+	@apply font-normal text-base tracking-[0.2em] border-[1px] pb-2 pt-3 px-6 rounded-full text-textDark;
+}
+
+.introduction-content {
+	@apply flex flex-col mt-6;
+}
+
+.introduction-title {
+	@apply text-[2.75rem] font-bold tracking-wider text-textDark;
+	font-family: 'Neue Regrade', sans-serif;
+}
+
+.introduction-text {
+	@apply mt-28 text-lg leading-relaxed text-textDark;
+	font-family: 'Rota', sans-serif;
+}
+
+.introduction-arrow {
+	@apply flex flex-col items-center mt-36 animate-bounce z-[1] relative;
+}
+
+.introduction-arrow-title {
+	font-family: 'Rota', sans-serif;
+	transform: rotate(90deg);
+	@apply mb-4 font-medium text-textDark;
+}
+/* ! question.
+	Why does the arrow apears over the active mobile navigation,
+  although the arrow has a lower z-index than nav?
+*/
+.introduction-arrow-down-svg {
+	@apply mt-7 mb-1;
 }
