@@ -3,10 +3,10 @@
 <style></style>
 
 <template>
-	<section class="introduction">
+	<section id="intro-section" class="introduction">
 		<button class="introduction-chip">JUNIOR</button>
 		<div class="introduction-content">
-			<h1 class="introduction-title">FRONT -END DEVELOPER</h1>
+			<h1 class="title">FRONT -END DEVELOPER</h1>
 			<p class="introduction-text"
 				>I'm Pascal, a 32-year-old ambitious junior front-end developer actively seeking new challenges, driven by a
 				passion for learning daily and crafting engaging user interfaces.</p

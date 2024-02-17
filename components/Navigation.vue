@@ -8,7 +8,13 @@
 	const openMenu = ref(false);
 
 	const toggleMenu = () => {
+		console.log(openMenu.value);
 		openMenu.value = !openMenu.value;
+	};
+
+	const scrollUp = () => {
+		openMenu.value = false;
+		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
 </script>
 
@@ -18,7 +24,7 @@
 	<nav class="nav">
 		<div class="nav-logo">
 			<h1 class="nav-logo-title">
-				<NuxtLink to="/"> KOOP PASCAL </NuxtLink>
+				<NuxtLink @click="scrollUp" to="/"> KOOP PASCAL </NuxtLink>
 			</h1>
 		</div>
 		<div
@@ -54,6 +60,7 @@
 					:key="link.name"
 					class="mobile-nav-list-item">
 					<NuxtLink
+						@click="toggleMenu"
 						:to="link.to"
 						:class="{ active: openMenu }"
 						class="mobile-nav-link">
