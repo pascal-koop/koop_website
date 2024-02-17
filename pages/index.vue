@@ -7,4 +7,5 @@
 
 <template>
  <Navigation/>
+ <Intro/>
 </template>
