@@ -8,7 +8,6 @@
 	const openMenu = ref(false);
 
 	const toggleMenu = () => {
-		console.log(openMenu.value);
 		openMenu.value = !openMenu.value;
 	};
 
