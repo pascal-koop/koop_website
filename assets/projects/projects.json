@@ -1,21 +1,21 @@
 [
 	{
 		"title": "Megorei Lead Magnet",
-		"preview": "/megorei-lead-magnet-980.png",
+		"previewLarge": "/megorei-lead-magnet-980.png",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "The goal of the project is to develop a Single Page Application (SPA) with database connectivity. \n\n The SPA allows the targeted placement of a lead magnet link to articles, whitepapers or other content created by megorei or an advertising agency. \n\n This can be done in personal conversations, on LinkedIn or Mastodon. Interested customers can click on the link, leave their contact details (usually email address, name or company name) and automatically receive a confirmation email. This email contains an informational text and a link to the download page for the content in question. \n\n This process is used to gauge interest in megorei, provide potential customers with access to relevant content, and collect important contact information for targeted marketing strategies.",
 		"link": "https://github.com/Pascale-Cheddar/lead-magnet-tool"
 	},
 	{
 		"title": "megorei scheduler",
-		"preview": "/megorei-scheduler.png",
+		"previewLarge": "/megorei-scheduler.png",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "As part of my internship at megorei Software GmbH, we pursued the goal of developing an appointment scheduler. Previously, the company only had a hard-coded e-mail address for managing appointments.\n\nOur solution is a web application that allows users to select the date and time range and leave their contact details for booking appointments. \n\nDuring implementation, attention was paid to user-friendliness, security and scalability. Furthermore, the corporate identity had to be taken into account in the design. \n\n***The logo and texts had to be changed.",
 		"link": "https://github.com/Pascale-Cheddar/scheduler"
 	},
 	{
 		"title": "cocktail bar",
-		"preview": "/cocktail-bar.png",
+		"previewLarge": "/cocktail-bar.png",
 		"tech": ["vue", "vite", "css", "html", "mysql", "prisma orm", "node.js"],
 		"description": "This project is an online shop for a bar where customers can order cocktails ahead of time for their reservations. \n\n When the customers arrive and take a seat at their tables, the bartender can fulfill the order that took place earlier.",
 		"link": "https://github.com/Pascale-Cheddar/cocktail_bar"
