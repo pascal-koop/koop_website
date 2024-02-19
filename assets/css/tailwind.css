@@ -228,6 +228,7 @@ body {
 .mobile-nav-link {
 	@apply hidden;
 }
+
 .mobile-nav-link.active {
 	animation: slideInFromBottom 2.5s cubic-bezier(0.19, 1, 0.22, 1);
 	@apply flex text-[2.5rem] font-semibold text-textLight relative;

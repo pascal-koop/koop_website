@@ -9,4 +9,5 @@
  <Navigation/>
  <Intro/>
  <Story/>
+ <Work/>
 </template>
