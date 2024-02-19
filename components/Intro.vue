@@ -14,7 +14,7 @@
 		</div>
     <div class="introduction-arrow">
       <p class="introduction-arrow-title">explore more</p>
-      <img class="introduction-arrow-down-svg" src="/Arrow.svg" alt="arrow down svg to explore more">
+      <NuxtImg class="introduction-arrow-down-svg" width="20" height="20" src="/Arrow.svg" alt="arrow down svg to explore more" />
     </div>
 	</section>
 </template>
