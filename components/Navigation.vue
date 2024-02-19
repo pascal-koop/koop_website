@@ -1,9 +1,9 @@
 <script setup>
 	const links = [
-		{ name: 'STORY', to: '#story-section', number: 'link-1' },
-		{ name: 'WORKS', to: '#works-section', number: 'link-2' },
-		{ name: 'EXPERIENCE', to: '#experience-section', number: 'link-3' },
-		{ name: 'CONTACTS', to: '#contacts-section', number: 'link-4' }
+		{ name: 'STORY', to: '#story-section'},
+		{ name: 'WORKS', to: '#works-section'},
+		{ name: 'EXPERIENCE', to: '#experience-section'},
+		{ name: 'CONTACTS', to: '#contacts-section'}
 	];
 	const openMenu = ref(false);
 
@@ -11,7 +11,7 @@
 		openMenu.value = !openMenu.value;
 	};
 
-	const scrollUp = () => {
+	const scrollUpOnLogoClick = () => {
 		openMenu.value = false;
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
@@ -23,7 +23,7 @@
 	<nav class="nav">
 		<div class="nav-logo">
 			<h1 class="nav-logo-title">
-				<NuxtLink @click="scrollUp" to="/"> KOOP PASCAL </NuxtLink>
+				<NuxtLink @click="scrollUpOnLogoClick" to="/"> KOOP PASCAL </NuxtLink>
 			</h1>
 		</div>
 		<div
