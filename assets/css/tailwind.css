@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* !es müssen noch die custom fonts entfernt werden, die nicht mehr benötigt werden! */
 /* custom fonts*/
 /*neue regrade*/
 /*light*/
@@ -277,10 +277,7 @@ body {
 	transform: rotate(90deg);
 	@apply mb-4 font-medium text-textDark;
 }
-/* ! question.
-	Why does the arrow apears over the active mobile navigation,
-  although the arrow has a lower z-index than nav?
-*/
+
 .introduction-arrow-down-svg {
 	@apply mt-7 mb-1;
 }
@@ -295,5 +292,60 @@ body {
 
 .story-text {
 	@apply mt-14 text-lg leading-relaxed text-textDark;
+	font-family: 'Rota', sans-serif;
+}
+
+.work {
+	@apply mx-5;
+}
+
+.work-title {
+	@apply mt-24;
+}
+
+.work-card {
+	@apply bg-cardLight pt-1 rounded-xl mt-14 flex flex-col;
+}
+
+.work-card:nth-of-type(odd) {
+	@apply bg-cardDark;
+
+	.work-card-subtitle,
+	.work-card-text,
+	.work-card-link,
+	.work-tech-stack-title,
+	.work-tech-stack-text {
+		@apply text-textLight;
+	}
+}
+
+.work-card-img {
+	@apply w-[270px] h-[187px] mx-auto mt-8 mb-5;
+}
+
+.work-card-subtitle {
+	@apply text-xl font-bold text-textDark mt-6 mb-2 mx-8;
+	font-family: 'Neue Regrade', sans-serif;
+}
+
+.work-tech-stack {
+	@apply flex;
+}
+.work-tech-stack-title {
+	@apply ml-8 text-lg font-semibold text-textDark inline-block;
+	font-family: 'Neue Regrade', sans-serif;
+}
+.work-tech-stack-text {
+	@apply text-lg text-textDark ml-2 mr-8;
+	font-family: 'Rota', sans-serif;
+}
+
+.work-card-text {
+	@apply text-lg text-textDark mx-8 my-11;
+	font-family: 'Rota', sans-serif;
+}
+
+.work-card-link {
+	@apply text-lg text-textDark mx-8 mb-8 hover:underline;
 	font-family: 'Rota', sans-serif;
 }
