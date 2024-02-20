@@ -222,7 +222,7 @@ body {
 
 .mobile-nav.active {
 	animation: slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1);
-	@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark;
+	@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-16 overflow-y-auto;
 }
 
 .mobile-nav-link {

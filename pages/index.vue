@@ -10,8 +10,10 @@
 <style></style>
 
 <template>
-	<Navigation />
-	<Intro />
-	<Story />
-	<Work />
+	<TheNavigationSection />
+	<main class="overflow-y-none">
+		<TheIntroSection />
+		<TheStorySection />
+		<TheWorkSection/>
+	</main>
 </template>
