@@ -4,43 +4,7 @@
 /* !es müssen noch die custom fonts entfernt werden, die nicht mehr benötigt werden! */
 /* custom fonts*/
 /*neue regrade*/
-/*light*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Light.eot');
-	src: url('/fonts/NeueRegrade-Light.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Light.woff2') format('woff2'), url('/fonts/NeueRegrade-Light.woff') format('woff'),
-		url('/fonts/NeueRegrade-Light.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Light.svg#NeueRegrade-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-/*regular*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Regular.eot');
-	src: url('/fonts/NeueRegrade-Regular.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Regular.woff2') format('woff2'), url('/fonts/NeueRegrade-Regular.woff') format('woff'),
-		url('/fonts/NeueRegrade-Regular.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Regular.svg#NeueRegrade-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-/*semi-bold-italic*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-SemiBold-Italic.eot');
-	src: url('/fonts/NeueRegrade-SemiBold-Italic.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-SemiBold-Italic.woff2') format('woff2'),
-		url('/fonts/NeueRegrade-SemiBold-Italic.woff') format('woff'),
-		url('/fonts/NeueRegrade-SemiBold-Italic.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-SemiBold-Italic.svg#NeueRegrade-SemiBold-Italic') format('svg');
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
-}
+
 /*semi-bold*/
 @font-face {
 	font-family: 'Neue Regrade';
@@ -53,56 +17,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-/*medium*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Medium.eot');
-	src: url('/fonts/NeueRegrade-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Medium.woff2') format('woff2'), url('/fonts/NeueRegrade-Medium.woff') format('woff'),
-		url('/fonts/NeueRegrade-Medium.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Medium.svg#NeueRegrade-Medium') format('svg');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-/*medium-italic*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Medium-Italic.eot');
-	src: url('/fonts/NeueRegrade-Medium-Italic.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Medium-Italic.woff2') format('woff2'),
-		url('/fonts/NeueRegrade-Medium-Italic.woff') format('woff'),
-		url('/fonts/NeueRegrade-Medium-Italic.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Medium-Italic.svg#NeueRegrade-Medium-Italic') format('svg');
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
-}
-/*regular*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Regular_1.eot');
-	src: url('/fonts/NeueRegrade-Regular_1.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Regular_1.woff2') format('woff2'), url('/fonts/NeueRegrade-Regular_1.woff') format('woff'),
-		url('/fonts/NeueRegrade-Regular_1.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Regular_1.svg#NeueRegrade-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-/*regular-italic*/
-@font-face {
-	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Regular-Italic.eot');
-	src: url('/fonts/NeueRegrade-Regular-Italic.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Regular-Italic.woff2') format('woff2'),
-		url('/fonts/NeueRegrade-Regular-Italic.woff') format('woff'),
-		url('/fonts/NeueRegrade-Regular-Italic.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Regular-Italic.svg#NeueRegrade-Regular-Italic') format('svg');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
+
 /*bold*/
 @font-face {
 	font-family: 'Neue Regrade';
@@ -115,6 +30,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 /*bold-italic*/
 @font-face {
 	font-family: 'Neue Regrade';
@@ -141,211 +57,11 @@
 	font-display: swap;
 }
 
-body {
-	@apply bg-bglight;
-}
-
-.nav {
-	@apply h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed top-0 z-30;
-}
-
-.nav-logo {
-	@apply w-4;
-}
-
-.nav-logo-title {
-	@apply text-pretty;
-
-	a {
-		@apply font-bold italic text-lg;
-		font-family: 'Neue Regrade', sans-serif;
+@layer base {
+	body {
+		@apply bg-bglight;
 	}
-}
-
-.hamburger {
-	@apply w-16 p-1 cursor-pointer;
-	@apply md:hidden;
-}
-
-.hamburger-line {
-	@apply h-[.35rem] mt-[.35rem] mx-auto left-0 bg-bgdark;
-}
-
-.line-1 {
-	@apply w-12;
-	transition: all 0.3s;
-}
-
-.line-2 {
-	@apply w-9;
-	transition: all 0.3s;
-}
-
-.line-3 {
-	@apply w-7;
-	transition: all 0.3s;
-}
-
-.hamburger:hover .hamburger-line .active {
-	animation: none;
-}
-
-.active .line-1 {
-	@apply right-[0.75px];
-	transform: rotate(-58deg) translate(-13px, 10px);
-}
-
-@keyframes slideInFromLeft {
-	0% {
-		transform: translateX(-100%);
+	.title {
+		@apply font-neueRegrade  text-[2.75rem] font-bold tracking-wider text-textDark;
 	}
-	100% {
-		transform: translateX(0);
-	}
-}
-
-@keyframes slideInFromBottom {
-	0% {
-		transform: translateY(-500px);
-		opacity: 0;
-	}
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-.mobile-nav {
-	@apply left-0 fixed mt-2 hidden p-14 z-30;
-	@apply md:hidden;
-}
-
-.mobile-nav.active {
-	animation: slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1);
-	@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-16 overflow-y-auto;
-}
-
-.mobile-nav-link {
-	@apply hidden;
-}
-
-.mobile-nav-link.active {
-	animation: slideInFromBottom 2.5s cubic-bezier(0.19, 1, 0.22, 1);
-	@apply flex text-[2.5rem] font-semibold text-textLight relative;
-}
-
-.mobile-nav-list-item {
-	@apply text-[2.5rem] mt-11 font-semibold text-textLight;
-	font-family: 'Neue Regrade', sans-serif;
-}
-
-.mobile-nav-link-list {
-	.mobile-nav-link-internationalization {
-		@apply flex mt-11;
-	}
-}
-
-.introduction {
-	@apply mt-52 mx-5;
-}
-
-.introduction-chip {
-	font-family: 'Rota', sans-serif;
-	@apply font-normal text-base tracking-[0.2em] border-[1px] pb-2 pt-3 px-6 rounded-full text-textDark;
-}
-
-.introduction-content {
-	@apply flex flex-col mt-6;
-}
-
-.title {
-	@apply text-[2.75rem] font-bold tracking-wider text-textDark;
-	font-family: 'Neue Regrade', sans-serif;
-}
-
-.introduction-text {
-	@apply mt-28 text-lg leading-relaxed text-textDark;
-	font-family: 'Rota', sans-serif;
-}
-
-.introduction-arrow {
-	@apply flex flex-col items-center mt-36 animate-bounce z-[1] relative;
-}
-
-.introduction-arrow-title {
-	font-family: 'Rota', sans-serif;
-	transform: rotate(90deg);
-	@apply mb-4 font-medium text-textDark;
-}
-
-.introduction-arrow-down-svg {
-	@apply mt-7 mb-1;
-}
-
-.story {
-	@apply mx-5;
-}
-
-.story-title {
-	@apply mt-24;
-}
-
-.story-text {
-	@apply mt-14 text-lg leading-relaxed text-textDark;
-	font-family: 'Rota', sans-serif;
-}
-
-.work {
-	@apply mx-5;
-}
-
-.work-title {
-	@apply mt-24;
-}
-
-.work-card {
-	@apply bg-cardLight pt-1 rounded-xl mt-14 flex flex-col;
-}
-
-.work-card:nth-of-type(odd) {
-	@apply bg-cardDark;
-
-	.work-card-subtitle,
-	.work-card-text,
-	.work-card-link,
-	.work-tech-stack-title,
-	.work-tech-stack-text {
-		@apply text-textLight;
-	}
-}
-
-.work-card-img {
-	@apply w-[270px] h-[187px] mx-auto mt-8 mb-5;
-}
-
-.work-card-subtitle {
-	@apply text-xl font-bold text-textDark mt-6 mb-2 mx-8;
-	font-family: 'Neue Regrade', sans-serif;
-}
-
-.work-tech-stack {
-	@apply flex;
-}
-.work-tech-stack-title {
-	@apply ml-8 text-lg font-semibold text-textDark inline-block;
-	font-family: 'Neue Regrade', sans-serif;
-}
-.work-tech-stack-text {
-	@apply text-lg text-textDark ml-2 mr-8;
-	font-family: 'Rota', sans-serif;
-}
-
-.work-card-text {
-	@apply text-lg text-textDark mx-8 my-11;
-	font-family: 'Rota', sans-serif;
-}
-
-.work-card-link {
-	@apply text-lg text-textDark mx-8 mb-8 hover:underline;
-	font-family: 'Rota', sans-serif;
 }

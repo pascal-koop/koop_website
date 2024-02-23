@@ -3,10 +3,10 @@
 <style></style>
 
 <template>
-	<section id="story-section" class="story">
+	<section id="story-section" class="story mx-5">
 		<div class="story-content">
-			<h2 class="story-title title">MY STORY</h2>
-			<p class="story-text">
+			<h2 class="story-title title mt-24">MY STORY</h2>
+			<p class="story-text font-rota mt-14 text-lg leading-relaxed text-textDark">
 				Hi, I'm Pascal, a highly motivated Junior Front-End Developer. <br /><br />
 				My journey to becoming a computer scientist started with a completed apprenticeship as a carpenter and various
 				jobs. But, during the Corona pandemic, I discovered the world of web development, and I realized that I wanted
