@@ -1,0 +1,42 @@
+[
+	{
+		"name": "JavaScript",
+		"image": "/public/skills-js.png"
+	},
+	{
+		"name": "TypeScript",
+		"image": "/public/skills-ts.png"
+	},
+	{
+		"name": "Vue",
+		"image": "/public/skills-vue.png"
+	},
+	{
+		"name": "Nuxt",
+		"image": "/public/skills-nuxt.png"
+	},
+	{
+		"name": "HTML",
+		"image": "/public/skills-html.png"
+	},
+	{
+		"name": "CSS",
+		"image": "/public/skills-css.png"
+	},
+	{
+		"name": "Pinia",
+		"image": "/public/skills-pinia.png"
+	},
+	{
+		"name": "Vite",
+		"image": "/public/skills-vite.png"
+	},
+	{
+		"name": "TailwindCss",
+		"image": "/public/skills-tailwind.png"
+	},
+	{
+		"name": "MYSQL",
+		"image": "/public/skills-mysql.png"
+	}
+]

@@ -15,5 +15,6 @@
 		<TheIntroSection />
 		<TheStorySection />
 		<TheWorkSection/>
+		<TheSkillsSection />
 	</main>
 </template>
