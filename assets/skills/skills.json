@@ -1,0 +1,52 @@
+[
+	{
+		"name": "JavaScript",
+		"image": "/skills-js.png",
+    "alt": "JavaScript logo"
+	},
+	{
+		"name": "TypeScript",
+		"image": "/skills-typescript.png",
+    "alt": "TypeScript logo"
+	},
+	{
+		"name": "Vue",
+		"image": "/skills-vue.png",
+    "alt": "Vue logo"
+	},
+	{
+		"name": "Nuxt",
+		"image": "/skills-nuxt.png",
+    "alt": "Nuxt logo"
+	},
+	{
+		"name": "HTML",
+		"image": "/skills-html.png",
+    "alt": "HTML logo"
+	},
+	{
+		"name": "CSS",
+		"image": "/skills-css.png",
+    "alt": "CSS logo"
+	},
+	{
+		"name": "Pinia",
+		"image": "/skills-pinia.png",
+    "alt": "Pinia logo"
+	},
+	{
+		"name": "Vite",
+		"image": "/skills-vite.png",
+    "alt": "Vite logo"
+	},
+	{
+		"name": "TailwindCss",
+		"image": "/skills-tailwind.png",
+		"alt": "Tailwind css logo"
+	},
+	{
+		"name": "MYSQL",
+		"image": "/skills-mysql.png",
+		"alt": "My SQL logo"
+	}
+]

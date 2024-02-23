@@ -31,10 +31,10 @@
 				alt="work-preview-image"
 				class="work-card-img w-[270px] h-[187px] mx-auto mt-8 mb-5">
 			</NuxtImg>
-			<h2 class="work-card-subtitle font-neueRegrade text-xl font-bold text-textDark mt-6 mb-2 mx-8">{{ project.title.toUpperCase() }}</h2>
+			<h2 class="work-card-subtitle font-neueRegrade text-xl font-bold text-textDark mt-6 mb-2 mx-8 uppercase">{{ project.title }}&nbsp;</h2>
 			<div class="work-tech-stack flex">
 				<span class="work-tech-stack-title font-neueRegrade ml-8 text-lg font-semibold text-textDark inline-block">TECH: </span>
-				<h3 class="work-tech-stack-text font-rota text-lg text-textDark ml-2 mr-8">{{ project.tech.join(', ').toUpperCase() }}</h3>
+				<h3 class="work-tech-stack-text font-rota text-lg text-textDark ml-2 mr-8 uppercase">{{ project.tech.join(',&nbsp; ') }}</h3>
 			</div>
 			<p class="work-card-text font-rota text-lg text-textDark mx-8 my-11">{{ project.description }}</p>
 			<NuxtLink
