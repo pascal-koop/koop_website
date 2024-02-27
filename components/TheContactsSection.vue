@@ -1,5 +1,12 @@
-<script setup>
-	let contactLinks = [
+<script setup lang="ts">
+	type ContactLink = {
+		name: string;
+		to: string;
+		target?: string;
+	};
+
+
+	const contactLinks: ContactLink[] = [
 		{ name: 'E-MAIL', to: 'mailto:pascale.koop@live.com'},
 		{ name: 'LINKEDIN', to: 'https://www.linkedin.com/in/pascal-koop-343b25207/', target: '_blank'  },
 		{ name: 'GITHUB', to: 'https://github.com/Pascale-Cheddar', target: '_blank'}
