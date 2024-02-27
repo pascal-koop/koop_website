@@ -1,10 +1,16 @@
 <script setup lang="ts">
+const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+
+const availableLocales = computed(() => {
+  return locales.value.filter(i => i.code !== locale.value)
+})
+
+
 	type Link = {
 		name: string;
 		to: string;
 	};
-
-
 
 	const links: Link[] = [
 		{ name: 'STORY', to: '#story-section' },
@@ -91,20 +97,10 @@
 						{{ link.name }}
 					</NuxtLink>
 				</li>
-				<li class="internationalization-links flex mt-11">
-					<nuxt-link
-						to="/en"
-						:class="{ active: openMenu }"
-						class="mobile-nav-link">
-						<span>EN&nbsp;/</span>
-					</nuxt-link>
-
-					<nuxt-link
-						to="/de"
-						:class="{ active: openMenu }"
-						class="mobile-nav-link">
-						<span>&nbsp;DE</span>
-					</nuxt-link>
+				<li v-for="locale in availableLocales" :key="locale.code" class="internationalization-links flex mt-11">
+					<NuxtLink :to="switchLocalePath(locale.code)" :class="{ active: openMenu }" class="mobile-nav-link" >
+						<span>{{ locale.code }}</span>
+					</NuxtLink>
 				</li>
 			</ul>
 		</div>
