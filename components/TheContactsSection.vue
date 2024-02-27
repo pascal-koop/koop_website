@@ -15,15 +15,15 @@
 <style></style>
 
 <template>
-	<footer
+	<section
 		id="contacts-section"
 		class="contacts mx-5 mb-2">
 		<h2 class="section-title title">CONTACTS</h2>
-		<div class="contacts-content mt-14 flex flex-row flex-wrap justify-center">
+		<div class="contacts-content my-4 flex flex-col justify-center">
 			<button
 				v-for="link in contactLinks"
 				:key="link.name"
-				class="contact-btn mx-3">
+				class="contact-btn mx-3 mt-4">
 				<NuxtLink
 					:to="link.to"
 					:target="link.target"
@@ -32,5 +32,5 @@
 				</NuxtLink>
 			</button>
 		</div>
-	</footer>
+	</section>
 </template>
