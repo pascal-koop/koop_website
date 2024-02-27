@@ -8,7 +8,7 @@
 	<section
 		class="experience mx-5"
 		id="experience-section">
-		<h2 class="title section-title">MY SKILLS</h2>
+		<h2 class="title section-title mt-24">MY SKILLS</h2>
 		<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense">
 			<div
 				v-for="skill in skills"
@@ -18,8 +18,8 @@
 				<NuxtImg
 					:src="skill.image"
 					:alt="skill.alt"
-					class="skill-img mr-4" />
-				<h3 class="section-title font-rota text-lg uppercase">{{ skill.name }}</h3>
+					class="skill-img mr-4 h-[3rem]" />
+				<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
 			</div>
 		</div>
 	</section>
