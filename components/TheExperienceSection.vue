@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 	import skills from '../assets/skills/skills.json';
 </script>
 
@@ -12,7 +12,7 @@
 		<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 			<div
 				v-for="skill in skills"
-				:key="skill.id"
+				:key="skill.name"
 				class="skill flex flex-row">
 				<!-- do I need a size for every viewport? -->
 				<NuxtImg

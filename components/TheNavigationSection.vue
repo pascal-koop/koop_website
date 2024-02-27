@@ -1,11 +1,18 @@
-<script setup>
-	const links = [
+<script setup lang="ts">
+	type Link = {
+		name: string;
+		to: string;
+	};
+
+
+
+	const links: Link[] = [
 		{ name: 'STORY', to: '#story-section' },
 		{ name: 'WORKS', to: '#works-section' },
 		{ name: 'EXPERIENCE', to: '#experience-section' },
 		{ name: 'CONTACTS', to: '#contacts-section' }
 	];
-	const openMenu = ref(false);
+	const openMenu = ref<boolean>(false);
 
 	const toggleMenu = () => {
 		openMenu.value = !openMenu.value;
