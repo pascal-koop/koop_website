@@ -13,7 +13,7 @@
 			>
 		</div>
     <div class="introduction-arrow flex flex-col items-center mt-36 animate-bounce z-[1] relative">
-      <p class="introduction-arrow-title font-rota rotate-90 mb-4 font-medium text-textDark">explore more</p>
+      <p class="introduction-arrowsection-title font-rota rotate-90 mb-4 font-medium text-textDark">explore more</p>
       <NuxtImg class="introduction-arrow mt-7 mb-1" width="20" height="20" src="/Arrow.svg" alt="arrow down svg to explore more" />
     </div>
 	</section>

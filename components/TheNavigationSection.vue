@@ -23,7 +23,7 @@
 	}
 
 	.mobile-nav.active {
-		@apply animate-slideInFromLeft flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-16 overflow-y-auto;
+		@apply animate-slideInFromLeft flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
 	}
 
 	.mobile-nav-link.active {
@@ -34,7 +34,7 @@
 <template>
 	<nav class="nav h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed top-0 z-30">
 		<div class="nav-logo w-4">
-			<h1 class="nav-logo-title text-pretty">
+			<h1 class="nav-logosection-title text-pretty">
 				<NuxtLink
 					@click="scrollUpOnLogoClick"
 					to="/"
