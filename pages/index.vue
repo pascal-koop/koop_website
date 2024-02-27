@@ -16,5 +16,6 @@
 		<TheStorySection />
 		<TheWorkSection/>
 		<TheExperienceSection />
+		<TheContactsSection />
 	</main>
 </template>
