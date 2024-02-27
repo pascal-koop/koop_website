@@ -5,11 +5,11 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'EN',
-        file: 'en-US.json'
+        file: { path: 'en-US.json', cache: false}
       },
       {
         code: 'DE',
-        file: 'de-DE.json'
+        file: { path: 'de-DE.json', cache: false}
       }
     ],
     lazy: true,

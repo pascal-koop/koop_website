@@ -1,3 +1,9 @@
 {
-  "welcome": "welcome"
+	"navigation": {
+		"story": "STORY",
+		"works": "WORKS",
+		"experience": "EXPERIENCE",
+		"contacts": "CONTACT"
+	}
+
 }
