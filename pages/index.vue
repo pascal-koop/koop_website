@@ -18,4 +18,5 @@
 		<TheExperienceSection />
 		<TheContactsSection />
 	</main>
+	<TheFooterSection />
 </template>
