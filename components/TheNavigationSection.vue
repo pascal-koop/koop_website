@@ -1,17 +1,23 @@
 <script setup lang="ts">
+	const { locale, locales, t } = useI18n();
+	const switchLocalePath = useSwitchLocalePath();
+
+	const availableLocales = computed(() => {
+		return locales.value.filter((i) => i.code !== locale.value);
+	});
+
 	type Link = {
 		name: string;
 		to: string;
 	};
 
-
-
 	const links: Link[] = [
-		{ name: 'STORY', to: '#story-section' },
-		{ name: 'WORKS', to: '#works-section' },
-		{ name: 'EXPERIENCE', to: '#experience-section' },
-		{ name: 'CONTACTS', to: '#contacts-section' }
+		{ name: t('navigation.story'), to: '#story-section' },
+		{ name: t('navigation.works'), to: '#works-section' },
+		{ name: t('navigation.experience'), to: '#experience-section' },
+		{ name: t('navigation.contacts'), to: '#contacts-section' }
 	];
+
 	const openMenu = ref<boolean>(false);
 
 	const toggleMenu = () => {
@@ -72,6 +78,21 @@
 						{{ link.name }}
 					</NuxtLink>
 				</li>
+				<li
+					v-for="locale in availableLocales"
+					:key="locale.code"
+					class="internationalization-links flex mt-11">
+					<NuxtLink
+						:to="switchLocalePath(locale.code)"
+						:class="{ active: openMenu }"
+						class="desktop-nav-link">
+						<NuxtImg
+							src="/world-svg.svg"
+							:alt="locale.code"
+							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+						<span>{{ locale.code }}</span>
+					</NuxtLink>
+				</li>
 			</ul>
 		</div>
 		<!-- mobile-nav  -->
@@ -91,20 +112,20 @@
 						{{ link.name }}
 					</NuxtLink>
 				</li>
-				<li class="internationalization-links flex mt-11">
-					<nuxt-link
-						to="/en"
+				<li
+					v-for="locale in availableLocales"
+					:key="locale.code"
+					class="internationalization-links flex mt-11">
+					<NuxtLink
+						:to="`${switchLocalePath(locale.code)}` "
 						:class="{ active: openMenu }"
 						class="mobile-nav-link">
-						<span>EN&nbsp;/</span>
-					</nuxt-link>
-
-					<nuxt-link
-						to="/de"
-						:class="{ active: openMenu }"
-						class="mobile-nav-link">
-						<span>&nbsp;DE</span>
-					</nuxt-link>
+						<NuxtImg
+							src="/world-svg.svg"
+							:alt="locale.code"
+							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+						<span>{{ locale.code }}</span>
+					</NuxtLink>
 				</li>
 			</ul>
 		</div>
