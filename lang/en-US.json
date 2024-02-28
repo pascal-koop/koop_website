@@ -5,5 +5,20 @@
 		"experience": "EXPERIENCE",
 		"contacts": "CONTACT"
 	},
-  "intro": "Moin! I'm Pascal, a ambitious junior front-end developer actively seeking new challenges, driven by a passion for learning daily and crafting engaging user interfaces."
+  "sectionTitles": {
+    "story": "My Story",
+    "works": "My Works",
+    "experience": "My Experience",
+    "contacts": "Contact"
+  },
+  "intro": "Moin! \n I'm Pascal, a ambitious junior front-end developer actively seeking new challenges, driven by a passion for learning daily and crafting engaging user interfaces.",
+  "story": "My journey to becoming a computer scientist started with a completed apprenticeship as a carpenter and various jobs. But, during the Corona pandemic, I discovered the world of web development, and I realized that I wanted to continue to develop myself further. So, I spent a year learning with great enthusiasm, and the more I delved into it, the more I became passionate about it. That's when I decided to start my training as a computer scientist. \n\n I am an open-minded individual who is always eager to learn new things quickly. In my free time, I enjoy reading, Calisthenics (a mixture of strength training and gymnastics), meditation, and house dance. \n\n I believe that my ability to continuously face new challenges, as well as my excellent team-oriented and communication skills, make me a valuable addition to any team. I am convinced that my passion for technology and my willingness to constantly learn can contribute to the development of creative solutions and support the team on its path to success.",
+  "projects": {
+		"description": {
+			"leadMagnet": "The goal of the project is to develop a Single Page Application (SPA) with database connectivity. \n\n The SPA allows the targeted placement of a lead magnet link to articles, whitepapers or other content created by megorei or an advertising agency. \n\n This can be done in personal conversations, on LinkedIn or Mastodon. Interested customers can click on the link, leave their contact details (usually email address, name or company name) and automatically receive a confirmation email. This email contains an informational text and a link to the download page for the content in question. \n\n This process is used to gauge interest in megorei, provide potential customers with access to relevant content, and collect important contact information for targeted marketing strategies.",
+			"megoreiScheduler": "As part of my internship at megorei Software GmbH, we pursued the goal of developing an appointment scheduler. Previously, the company only had a hard-coded e-mail address for managing appointments.\n\nOur solution is a web application that allows users to select the date and time range and leave their contact details for booking appointments. \n\nDuring implementation, attention was paid to user-friendliness, security and scalability. Furthermore, the corporate identity had to be taken into account in the design. \n\n ***The logo and texts had to be changed.",
+			"cocktailBar": "This project is an online shop for a bar where customers can order cocktails ahead of time for their reservations. \n\n When the customers arrive and take a seat at their tables, the bartender can fulfill the order that took place earlier."
+		}
+	}
+
 }
