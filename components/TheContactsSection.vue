@@ -18,7 +18,7 @@
 	<section
 		id="contacts-section"
 		class="contacts mx-5 mb-2">
-		<h2 class="section-title title">CONTACTS</h2>
+		<h2 class="section-title title">{{ $t('sectionTitles.contacts') }}</h2>
 		<div class="contacts-content my-4 flex flex-col justify-center">
 			<button
 				v-for="link in contactLinks"

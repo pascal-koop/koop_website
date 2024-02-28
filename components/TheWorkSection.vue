@@ -2,13 +2,11 @@
 	import projects from '../assets/projects/projects.json';
 	const { t } = useI18n();
 
-	const projectsArray = Object.entries(projects)
+	const projectsArray = Object.entries(projects);
 	const projectData = projectsArray.map(([key, value]) => ({
 		...value,
 		description: t(`${value['description']}`)
 	}));
-
-
 </script>
 
 <style>
@@ -27,9 +25,9 @@
 
 <template>
 	<section
-		id="work-section"
+		id="works-section"
 		class="work mx-5">
-		<h1 class="section-title title">MY WORK</h1>
+		<h1 class="section-title title">{{ $t('sectionTitles.works') }}</h1>
 		<div
 			class="work-card bg-cardLight pt-1 rounded-xl mt-14 flex flex-col"
 			v-for="project in projectData"

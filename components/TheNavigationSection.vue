@@ -117,7 +117,7 @@
 					:key="locale.code"
 					class="internationalization-links flex mt-11">
 					<NuxtLink
-						:to="switchLocalePath(locale.code)"
+						:to="`${switchLocalePath(locale.code)}` "
 						:class="{ active: openMenu }"
 						class="mobile-nav-link">
 						<NuxtImg

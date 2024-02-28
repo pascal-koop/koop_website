@@ -8,7 +8,7 @@
 	<section
 		class="experience mx-5"
 		id="experience-section">
-		<h2 class="title section-title mt-24">MY SKILLS</h2>
+		<h2 class="title section-title mt-24">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 			<div
 				v-for="skill in skills"
