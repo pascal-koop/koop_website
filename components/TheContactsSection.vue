@@ -27,7 +27,7 @@
 				<NuxtLink
 					:to="link.to"
 					:target="link.target"
-					class="contact-links font-neueRegrade text-pretty text-2xl font-semibold"
+					class="contact-links font-neueRegrade text-pretty text-2xl font-medium"
 					>{{ link.name }}
 				</NuxtLink>
 			</button>
