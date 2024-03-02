@@ -1,13 +1,21 @@
-<script setup>
+<script setup lang="ts">
+
+	useSeoMeta({
+		title: 'Pascal Koop',
+		ogTitle: 'Pascal Koop',
+		description:
+			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
+		ogDescription:
+			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
+
+	});
 	useHead({
-		title: "Pascal's Portfolio",
 		htmlAttrs: {
 			lang: 'en'
 		}
 	});
 
-	const { locale } = useI18n()
-
+	const { locale } = useI18n();
 </script>
 
 <style></style>
@@ -17,7 +25,7 @@
 	<main class="overflow-y-none">
 		<TheIntroSection />
 		<TheStorySection />
-		<TheWorkSection/>
+		<TheWorkSection />
 		<TheExperienceSection />
 		<TheContactsSection />
 	</main>
