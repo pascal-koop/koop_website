@@ -18,6 +18,8 @@
 				<NuxtImg
 					:src="skill.image"
 					:alt="skill.alt"
+					:width="48"
+					:height="48"
 					class="skill-img mr-4 h-[3rem]" />
 				<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
 			</div>
