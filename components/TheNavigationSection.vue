@@ -81,7 +81,7 @@
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="internationalization-links px-5">
+					class="internationalization-links ">
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
@@ -91,7 +91,7 @@
 							height="30"
 							src="/localizeDark.svg"
 							:alt="locale.code"
-							class="w-3 h-[3.8rem] md:h-fit md:min-w-7 md:mb-1 text-textlight md:inline md:pr-2" />
+							class="w-3 h-[3.8rem] md:min-w-7 md:mb-1 text-textlight md:inline md:h-[1.2rem]" />
 						<span>{{ locale.code }}</span>
 					</NuxtLink>
 				</li>
