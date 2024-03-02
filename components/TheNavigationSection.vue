@@ -66,30 +66,32 @@
 			<div class="hamburger-line h-[.35rem] mt-[.35rem] mx-auto left-0 bg-bgdark w-7"></div>
 		</div>
 		<!-- desktop nav -->
-		<div class="desktop-nav-links hidden md:flex">
-			<ul class="desktop-nav-link-list">
+		<div class="desktop-nav-links hidden md:flex md:flex-col md:justify-center ">
+			<ul class="desktop-nav-link-list md:flex md:flex-row">
 				<li
 					v-for="link in links"
 					:key="link.name"
 					class="desktop-nav-list-item">
 					<NuxtLink
 						:to="link.to"
-						class="desktop-nav-link">
+						class="desktop-nav-link px-5">
 						{{ link.name }}
 					</NuxtLink>
 				</li>
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="internationalization-links flex mt-11">
+					class="internationalization-links px-5">
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
-						class="desktop-nav-link">
+						class="desktop-nav-link md:inline">
 						<NuxtImg
-							src="/world-svg.svg"
+							width="30"
+							height="30"
+							src="/localizeDark.svg"
 							:alt="locale.code"
-							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+							class="w-3 h-[3.8rem] md:h-fit md:min-w-7 md:mb-1 text-textlight md:inline md:pr-2" />
 						<span>{{ locale.code }}</span>
 					</NuxtLink>
 				</li>
@@ -117,13 +119,13 @@
 					:key="locale.code"
 					class="internationalization-links flex mt-11">
 					<NuxtLink
-						:to="`${switchLocalePath(locale.code)}` "
+						:to="`${switchLocalePath(locale.code)}`"
 						:class="{ active: openMenu }"
 						class="mobile-nav-link">
 						<NuxtImg
-							src="/world-svg.svg"
+							src="/localizeLight.svg"
 							:alt="locale.code"
-							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+							class="w-8 h-[3.8rem] mr-4" />
 						<span>{{ locale.code }}</span>
 					</NuxtLink>
 				</li>
