@@ -1,24 +1,24 @@
 <script setup lang="ts">
-	const { locale, locales, t } = useI18n();
-	const switchLocalePath = useSwitchLocalePath();
-
-	const availableLocales = computed(() => {
-		return locales.value.filter((i) => i.code !== locale.value);
-	});
-
 	type Link = {
 		name: string;
 		to: string;
+		isVisible?: boolean;
 	};
 
-	const links: Link[] = [
+	const { locale, locales, t } = useI18n();
+	const switchLocalePath = useSwitchLocalePath();
+	const openMenu = ref<boolean>(false);
+
+	const availableLocales = computed(() => {
+		return locales.value.filter((i: { code: string }) => i.code !== locale.value);
+	});
+
+	const links: Link[] = reactive([
 		{ name: t('navigation.story'), to: '#story-section' },
 		{ name: t('navigation.works'), to: '#works-section' },
 		{ name: t('navigation.experience'), to: '#experience-section' },
 		{ name: t('navigation.contacts'), to: '#contacts-section' }
-	];
-
-	const openMenu = ref<boolean>(false);
+	]);
 
 	const toggleMenu = () => {
 		openMenu.value = !openMenu.value;
@@ -66,7 +66,7 @@
 			<div class="hamburger-line h-[.35rem] mt-[.35rem] mx-auto left-0 bg-bgdark w-7"></div>
 		</div>
 		<!-- desktop nav -->
-		<div class="desktop-nav-links hidden md:flex md:flex-col md:justify-center ">
+		<div class="desktop-nav-links hidden md:flex md:flex-col md:justify-center">
 			<ul class="desktop-nav-link-list md:flex md:flex-row">
 				<li
 					v-for="link in links"
@@ -81,7 +81,7 @@
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="internationalization-links ">
+					class="internationalization-links">
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"

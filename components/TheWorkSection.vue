@@ -1,12 +1,24 @@
-<script setup>
+<script setup lang="ts">
 	import projects from '../assets/projects/projects.json';
+
 	const { t } = useI18n();
 
-	const projectsArray = Object.entries(projects);
-	const projectData = projectsArray.map(([key, value]) => ({
-		...value,
-		description: t(`${value['description']}`)
-	}));
+
+		interface Project {
+			title: string;
+			previewLarge: string;
+			tech: string[];
+			description: string;
+			link: string;
+		}
+
+		const projectsArray: Ref<[string, Project][]> = computed(() => Object.entries(projects));
+		const projectData: Ref<Project[]> = computed(() =>
+			projectsArray.value.map(([key, value]) => ({
+				...value,
+				description: t(`${value['description']}`)
+			}))
+		);
 </script>
 
 <style>
