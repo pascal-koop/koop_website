@@ -32,7 +32,7 @@
 
 <style>
 	.active .line-1 {
-		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px]  right-[0.75px];
+		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px] right-[0.75px];
 	}
 
 	.mobile-nav.active {
