@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/seo', '@vueuse/nuxt'],
+	modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/seo', '@nuxtjs/device'],
+
 	ssr: false,
+
 	i18n: {
 		locales: [
 			{
@@ -17,5 +19,9 @@ export default defineNuxtConfig({
 		langDir: 'lang',
 		defaultLocale: 'EN',
 		detectBrowserLanguage: false
+	},
+
+	devtools: {
+		enabled: true
 	}
 });
