@@ -14,10 +14,10 @@
 				src="../public/story-image.png"
 				alt="story image"
 				width="400"
-				height="400"
+				height="300"
 				placeholder="empty">
 			</NuxtImg>
-			<p class="story-text whitespace-pre-line font-rota mt-14 text-lg leading-relaxed text-textDark">
+			<p class="story-text whitespace-pre-line font-rota mt-14 lg:mt-0 text-lg leading-relaxed text-textDark">
 				{{ $t('story') }}
 			</p>
 		</div>
