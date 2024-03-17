@@ -7,17 +7,17 @@
 		ref="target"
 		id="story-section"
 		class="story mx-5">
-			<h2 class="section-title title">{{ $t('sectionTitles.story') }}</h2>
-		<div class="story-content md:flex md:flex-row">
+		<h2 class="section-title title">{{ $t('sectionTitles.story') }}</h2>
+		<div class="lg:grid lg:grid-flow-col lg:gap-36 lg:mt-14 lg:items-center">
 			<NuxtImg
-				class="hidden md:block"
+				class="hidden lg:block story-image"
 				src="../public/story-image.png"
 				alt="story image"
 				width="400"
 				height="400"
 				placeholder="empty">
 			</NuxtImg>
-			<p class="story-text whitespace-pre-line font-rota mt-14 text-lg leading-relaxed text-textDark ">
+			<p class="story-text whitespace-pre-line font-rota mt-14 text-lg leading-relaxed text-textDark">
 				{{ $t('story') }}
 			</p>
 		</div>
