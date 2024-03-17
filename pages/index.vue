@@ -3,9 +3,10 @@
 		title: 'Pascal Koop',
 		ogTitle: 'Pascal Koop',
 		description:
-			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
+			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
 		ogDescription:
-			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.'
+			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
+		author: 'Pascal Koop',
 	});
 	useHead({
 		htmlAttrs: {
