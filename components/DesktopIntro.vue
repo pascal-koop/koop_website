@@ -1,6 +1,7 @@
 <script setup lang="ts">
 	const scrollPosition = ref<number>(0);
 	const lastScrollTop = ref<number>(0);
+	const SCROLL_THRESHOLD = 100;
 	const IMAGE_OPACITY_FADE_RATE = 375;
 	const imageOpacity = computed<number>(() => {
 		const opacity = Math.max(0, 1 - scrollPosition.value / IMAGE_OPACITY_FADE_RATE);
@@ -12,7 +13,8 @@
 		const scrollTop = window.scrollY || document.documentElement.scrollTop;
 		scrollPosition.value = scrollTop; // Update the scroll position
 		lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // Update the last scroll position
-		scrollPosition.value > 10 ? (userIsScrolling.value = true) : (userIsScrolling.value = false);
+		scrollPosition.value > SCROLL_THRESHOLD ? (userIsScrolling.value = true) : (userIsScrolling.value = false);
+
 	};
 
 	onMounted(() => {
@@ -38,7 +40,7 @@
 				<h1
 					:style="{ transform: `translateX(${scrollPosition}px)` }"
 					class="z-10 text-7xl title text-textLight font-neueRegrade font-medium">
-					FRONT <span class="ml-48 z-10">-END</span>
+					FRONT <span class="lg:ml-48 lg:z-10">-END</span>
 				</h1>
 				<h1
 					:style="{ transform: `translateX(${-scrollPosition}px)` }"

@@ -16,7 +16,6 @@
 	const { isDesktop, isMobileOrTablet } = useDevice();
 	const userIsScrolling = computed(() => useState('userIsScrolling'));
 </script>
-
 <style></style>
 
 <template>
