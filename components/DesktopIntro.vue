@@ -64,7 +64,7 @@
 					:style="{ opacity: imageOpacity }"
 					height="500"
 					width="350"
-					src="../public/intro-image.png"
+					src="/intro-image.png"
 					alt="desktop intro image">
 				</img>
 			</div>

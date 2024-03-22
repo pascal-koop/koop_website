@@ -10,7 +10,7 @@
 		id="experience-section">
 		<h2 class="title section-title mt-24">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="lg:flex lg:mt-14">
-			<img class="hidden lg:block" src="/public/experience-desktop.png" alt="A picture of Pascal outside near water in summer">
+			<img class="hidden lg:block" src="/experience-desktop.png" alt="A picture of Pascal outside near water in summer">
 			<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 				<div
 					v-for="skill in skills"
