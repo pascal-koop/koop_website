@@ -23,7 +23,6 @@
 <style>
 	.work-card:nth-of-type(odd) {
 		@apply bg-cardDark;
-
 		.work-card-subtitle,
 		.work-card-text,
 		.work-card-link,
@@ -32,8 +31,6 @@
 			@apply text-textLight;
 		}
 	}
-
-
 </style>
 
 <template>
@@ -42,14 +39,14 @@
 		class="work mx-5">
 		<h1 class="section-title title">{{ $t('sectionTitles.works') }}</h1>
 		<div
-			class="work-card bg-cardLight pt-1 rounded-xl mt-14 flex flex-col lg:flex-row"
+			class="work-card bg-cardLight pt-1 rounded-xl mt-14 flex flex-col lg:flex-row px-5"
 			v-for="project in projectData"
 			:key="project.title">
 			<img
 				:src="project.previewLarge"
 				loading="lazy"
 				alt="work-preview-image"
-				class="work-card-img px-10 mx-auto mt-5 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg"
+				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg lg:shadow-cardImage"
 				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast;
 "
 			>
