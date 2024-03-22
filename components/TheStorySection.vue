@@ -12,7 +12,7 @@
 			<NuxtImg
 				class="hidden lg:block story-image"
 				src="../public/story-image.png"
-				alt="story image"
+				alt="Pascal staying on a road and the settling sun shines on him from the right"
 				width="400"
 				height="300"
 				placeholder="empty">
