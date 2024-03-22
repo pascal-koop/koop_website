@@ -1,29 +1,29 @@
 <script setup lang="ts">
-
 	useSeoMeta({
 		title: 'Pascal Koop',
 		ogTitle: 'Pascal Koop',
 		description:
-			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
+			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites.',
 		ogDescription:
-			'Pascal Koop is a web developer from Germany. He creates modern and responsive websites with a focus on performance and accessibility.',
-
+			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites.',
+		author: 'Pascal Koop',
 	});
 	useHead({
 		htmlAttrs: {
 			lang: 'en'
 		}
 	});
-
-	const { locale } = useI18n();
+	const { isDesktop, isMobileOrTablet } = useDevice();
+	const userIsScrolling = computed(() => useState('userIsScrolling'));
 </script>
-
 <style></style>
 
 <template>
-	<TheNavigationSection />
+	<TheNavigationSection v-if="isMobileOrTablet" />
+	<TheNavigationSection v-if="userIsScrolling.value && isDesktop" />
 	<main class="overflow-y-none">
-		<TheIntroSection />
+		<DesktopIntro v-if="isDesktop" />
+		<TheIntroSection v-else />
 		<TheStorySection />
 		<TheWorkSection />
 		<TheExperienceSection />

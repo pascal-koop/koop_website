@@ -1,24 +1,24 @@
 <script setup lang="ts">
-	const { locale, locales, t } = useI18n();
-	const switchLocalePath = useSwitchLocalePath();
-
-	const availableLocales = computed(() => {
-		return locales.value.filter((i) => i.code !== locale.value);
-	});
-
 	type Link = {
 		name: string;
 		to: string;
+		isVisible?: boolean;
 	};
 
-	const links: Link[] = [
+	const { locale, locales, t } = useI18n();
+	const switchLocalePath = useSwitchLocalePath();
+	const openMenu = ref<boolean>(false);
+
+	const availableLocales = computed(() => {
+		return locales.value.filter((i: { code: string }) => i.code !== locale.value);
+	});
+
+	const links: Link[] = reactive([
 		{ name: t('navigation.story'), to: '#story-section' },
 		{ name: t('navigation.works'), to: '#works-section' },
 		{ name: t('navigation.experience'), to: '#experience-section' },
 		{ name: t('navigation.contacts'), to: '#contacts-section' }
-	];
-
-	const openMenu = ref<boolean>(false);
+	]);
 
 	const toggleMenu = () => {
 		openMenu.value = !openMenu.value;
@@ -32,7 +32,7 @@
 
 <style>
 	.active .line-1 {
-		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px]  right-[0.75px];
+		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px] right-[0.75px];
 	}
 
 	.mobile-nav.active {
@@ -45,19 +45,20 @@
 </style>
 
 <template>
-	<nav class="nav h-20 w-svw px-5 py-4 flex flex-row justify-between bg-bglight fixed top-0 z-30">
-		<div class="nav-logo w-4">
-			<h1 class="nav-logosection-title text-pretty">
+	<nav class="fixed top-0 z-30 flex flex-row items-center justify-between h-20 px-5 py-4 w-svw ali bg-bglight">
+		<div class="w-20 nav-logo md:w-max">
+			<h1
+				class="transition duration-300 ease-in scale-110 text-pretty md:delay-150 hover:-translate-y-1 hover:-translate-x-1">
 				<NuxtLink
 					@click="scrollUpOnLogoClick"
 					to="/"
-					class="font-neueRegrade font-bold italic text-lg">
+					class="font-neueRegrade font-bold italic text-lg md:text-[1.55rem] break-words">
 					KOOP PASCAL
 				</NuxtLink>
 			</h1>
 		</div>
 		<div
-			class="hamburger w-16 p-1 cursor-pointer md:hidden"
+			class="w-16 p-1 cursor-pointer hamburger lg:hidden"
 			@click="toggleMenu"
 			:class="{ active: openMenu }">
 			<div
@@ -66,30 +67,32 @@
 			<div class="hamburger-line h-[.35rem] mt-[.35rem] mx-auto left-0 bg-bgdark w-7"></div>
 		</div>
 		<!-- desktop nav -->
-		<div class="desktop-nav-links hidden md:flex">
-			<ul class="desktop-nav-link-list">
+		<div class="hidden mr-5 desktop-nav-links lg:flex lg:flex-col lg:justify-center">
+			<ul class="desktop-nav-link-list lg:flex lg:flex-row">
 				<li
 					v-for="link in links"
 					:key="link.name"
-					class="desktop-nav-list-item">
+					class="transition duration-300 ease-in delay-150 scale-110 desktop-nav-list-item hover:-translate-y-1 hover:-translate-x-1">
 					<NuxtLink
 						:to="link.to"
-						class="desktop-nav-link">
+						class="px-5">
 						{{ link.name }}
 					</NuxtLink>
 				</li>
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="internationalization-links flex mt-11">
+					class="transition duration-300 ease-in delay-150 scale-110 internationalization-links hover:-translate-y-1 hover:-translate-x-1">
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
-						class="desktop-nav-link">
+						class="lg:inline">
 						<NuxtImg
-							src="/world-svg.svg"
+							width="30"
+							height="30"
+							src="/localizeDark.svg"
 							:alt="locale.code"
-							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+							class="w-3 h-[3.8rem] lg:min-w-7 lg:mb-1 text-textlight lg:inline lg:h-[1.2rem]" />
 						<span>{{ locale.code }}</span>
 					</NuxtLink>
 				</li>
@@ -97,7 +100,7 @@
 		</div>
 		<!-- mobile-nav  -->
 		<div
-			class="mobile-nav left-0 fixed mt-2 hidden p-14 z-30 md:hidden"
+			class="fixed left-0 z-30 hidden mt-2 mobile-nav p-14 lg:hidden"
 			:class="{ active: openMenu }">
 			<ul class="mobile-nav-link-list">
 				<li
@@ -108,22 +111,22 @@
 						@click="toggleMenu"
 						:to="link.to"
 						:class="{ active: openMenu }"
-						class="mobile-nav-link hidden">
+						class="hidden mobile-nav-link">
 						{{ link.name }}
 					</NuxtLink>
 				</li>
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="internationalization-links flex mt-11">
+					class="flex internationalization-links mt-11">
 					<NuxtLink
-						:to="`${switchLocalePath(locale.code)}` "
+						:to="`${switchLocalePath(locale.code)}`"
 						:class="{ active: openMenu }"
 						class="mobile-nav-link">
 						<NuxtImg
-							src="/world-svg.svg"
+							src="/localizeLight.svg"
 							:alt="locale.code"
-							class="w-8 h-[3.8rem] mr-4 text-textLight" />
+							class="w-8 h-[3.8rem] mr-4" />
 						<span>{{ locale.code }}</span>
 					</NuxtLink>
 				</li>
