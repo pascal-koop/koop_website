@@ -55,8 +55,8 @@
 				<h2 class="work-card-subtitle font-neueRegrade text-xl font-bold text-textDark mt-6 mb-2 mx-8 uppercase"
 					>{{ project.title }}&nbsp;
 				</h2>
-				<h3 class="work-tech-stacksection-title font-neueRegrade ml-8 text-lg font-semibold text-textDark inline-block"
-					>TECH: <span class="work-tech-stack-text font-rota text-lg text-textDark ml-2 mr-8 uppercase inline-block">{{ project.tech.join(',&nbsp; ') }}</span>
+				<h3 class="work-tech-stacksection-title font-neueRegrade ml-8 mr-2text-lg font-semibold text-textDark inline-block"
+					>TECH: <span class="work-tech-stack-text font-rota text-lg text-textDark mr-8 uppercase inline-block">{{ project.tech.join(',&nbsp; ') }}</span>
 				</h3>
 
 				<p class="work-card-text font-rota text-lg text-textDark mx-8 my-11">{{ project.description }}</p>
