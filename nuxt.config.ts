@@ -3,15 +3,6 @@ export default defineNuxtConfig({
 	modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/seo', '@nuxtjs/device'],
 
 	ssr: false,
-	/* nitro: {
-		prerender: {
-			routes: [
-				'/_ipx/megorei-lead-magnet-420.png',
-				'/public/megorei-scheduler.png',
-				'/public/cocktail-bar.png',
-			]
-		}
-	}, */
 	i18n: {
 		locales: [
 			{
