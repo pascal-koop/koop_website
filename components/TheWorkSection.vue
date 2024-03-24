@@ -41,7 +41,7 @@
 		<div
 			class="work-card bg-cardLight pt-1 rounded-xl mt-14 flex flex-col lg:flex-row px-5"
 			v-for="project in projectData"
-			:key="project.title">
+			:key="project.link">
 			<img
 				:src="project.previewLarge"
 				loading="lazy"
