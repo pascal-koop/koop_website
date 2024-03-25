@@ -36,7 +36,7 @@
 	}
 
 	.mobile-nav.active {
-		@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
+		@apply animate-slideInFromLeft flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
 	}
 
 	.mobile-nav-link.active {
@@ -111,8 +111,7 @@
 			<div
 				v-if="openMenu"
 				class="fixed left-0 z-30 hidden mt-2 mobile-nav p-14 lg:hidden"
-				:class="{ active: openMenu }"
-				>
+				:class="{ active: openMenu }">
 				<ul class="mobile-nav-link-list">
 					<li
 						v-for="link in links"
