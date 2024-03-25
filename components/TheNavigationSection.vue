@@ -36,7 +36,7 @@
 	}
 
 	.mobile-nav.active {
-		@apply animate-slideInFromLeft flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
+		@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
 	}
 
 	.mobile-nav-link.active {
@@ -127,7 +127,7 @@
 					</li>
 					<li
 						v-for="locale in availableLocales"
-						:key="locale.code"
+						:key="`${locale.code} language icon`"
 						class="flex internationalization-links mt-11">
 						<NuxtLink
 							:to="`${switchLocalePath(locale.code)}`"
@@ -135,7 +135,7 @@
 							class="mobile-nav-link">
 							<NuxtImg
 								src="/localizeLight.svg"
-								:alt="locale.code"
+								:alt="`${locale.code} language icon`"
 								class="w-8 h-[3.8rem] mr-4" />
 							<span>{{ locale.code }}</span>
 						</NuxtLink>

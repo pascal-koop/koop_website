@@ -1,10 +1,7 @@
 <script setup lang="ts">
 	useSeoMeta({
 		title: 'Pascal Koop',
-		ogTitle: 'Pascal Koop',
 		description:
-			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites.',
-		ogDescription:
 			'Explore the Portfolio of Pascal Koop. Pascal Koop is a web developer from Germany. He creates modern and responsive websites.',
 		author: 'Pascal Koop',
 	});
