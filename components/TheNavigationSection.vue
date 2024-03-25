@@ -36,11 +36,19 @@
 	}
 
 	.mobile-nav.active {
-		@apply animate-slideInFromLeft flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
+		@apply flex flex-col pt-16 h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
 	}
 
 	.mobile-nav-link.active {
 		@apply animate-slideInFromTop flex text-[2.5rem] font-semibold text-textLight relative;
+	}
+
+	.mobile-enter-active {
+		@apply animate-slideInFromLeft;
+	}
+
+	.mobile-leave-active {
+		@apply animate-slideOutToLeft;
 	}
 </style>
 
@@ -99,38 +107,42 @@
 			</ul>
 		</div>
 		<!-- mobile-nav  -->
-		<div
-			class="fixed left-0 z-30 hidden mt-2 mobile-nav p-14 lg:hidden"
-			:class="{ active: openMenu }">
-			<ul class="mobile-nav-link-list">
-				<li
-					v-for="link in links"
-					:key="link.name"
-					class="mobile-nav-list-item font-neueRegrade text-[2.5rem] mt-11 font-semibold text-textLight">
-					<NuxtLink
-						@click="toggleMenu"
-						:to="link.to"
-						:class="{ active: openMenu }"
-						class="hidden mobile-nav-link">
-						{{ link.name }}
-					</NuxtLink>
-				</li>
-				<li
-					v-for="locale in availableLocales"
-					:key="locale.code"
-					class="flex internationalization-links mt-11">
-					<NuxtLink
-						:to="`${switchLocalePath(locale.code)}`"
-						:class="{ active: openMenu }"
-						class="mobile-nav-link">
-						<NuxtImg
-							src="/localizeLight.svg"
-							:alt="locale.code"
-							class="w-8 h-[3.8rem] mr-4" />
-						<span>{{ locale.code }}</span>
-					</NuxtLink>
-				</li>
-			</ul>
-		</div>
+		<Transition name="mobile">
+			<div
+				v-if="openMenu"
+				class="fixed left-0 z-30 hidden mt-2 mobile-nav p-14 lg:hidden"
+				:class="{ active: openMenu }"
+				>
+				<ul class="mobile-nav-link-list">
+					<li
+						v-for="link in links"
+						:key="link.name"
+						class="mobile-nav-list-item font-neueRegrade text-[2.5rem] mt-11 font-semibold text-textLight">
+						<NuxtLink
+							@click="toggleMenu"
+							:to="link.to"
+							:class="{ active: openMenu }"
+							class="hidden mobile-nav-link">
+							{{ link.name }}
+						</NuxtLink>
+					</li>
+					<li
+						v-for="locale in availableLocales"
+						:key="locale.code"
+						class="flex internationalization-links mt-11">
+						<NuxtLink
+							:to="`${switchLocalePath(locale.code)}`"
+							:class="{ active: openMenu }"
+							class="mobile-nav-link">
+							<NuxtImg
+								src="/localizeLight.svg"
+								:alt="locale.code"
+								class="w-8 h-[3.8rem] mr-4" />
+							<span>{{ locale.code }}</span>
+						</NuxtLink>
+					</li>
+				</ul>
+			</div>
+		</Transition>
 	</nav>
 </template>

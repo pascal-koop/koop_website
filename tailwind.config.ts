@@ -28,6 +28,7 @@ module.exports = {
 			},
 			animation: {
 				slideInFromLeft: 'slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1)',
+				slideOutToLeft: 'slideOutToLeft 1s cubic-bezier(0.19, 1, 0.22, 1)',
 				slideInFromTop: 'slideInFromTop 2.5s cubic-bezier(0.19, 1, 0.22, 1)'
 			},
 			keyframes: {
@@ -37,6 +38,14 @@ module.exports = {
 					},
 					'100%': {
 						transform: 'translateX(0)'
+					}
+				},
+				slideOutToLeft: {
+					'0%': {
+						transform: 'translateX(0)'
+					},
+					'100%': {
+						transform: 'translateX(-100%)'
 					}
 				},
 				slideInFromTop: {
