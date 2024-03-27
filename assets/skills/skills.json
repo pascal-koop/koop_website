@@ -2,51 +2,61 @@
 	{
 		"name": "JavaScript",
 		"image": "/skills-js.svg",
-    "alt": "JavaScript logo"
+    "alt": "JavaScript logo",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 	},
 	{
 		"name": "TypeScript",
 		"image": "/skills-typescript.svg",
-    "alt": "TypeScript logo"
+    "alt": "TypeScript logo",
+		"link": "https://www.typescriptlang.org/"
 	},
 	{
 		"name": "Vue",
 		"image": "/skills-vue.svg",
-    "alt": "Vue logo"
+    "alt": "Vue logo",
+		"link": "https://vuejs.org/"
 	},
 	{
 		"name": "Nuxt",
 		"image": "/skills-nuxt.svg",
-    "alt": "Nuxt logo"
+    "alt": "Nuxt logo",
+		"link": "https://nuxtjs.org/"
 	},
 	{
 		"name": "HTML",
 		"image": "/skills-html.svg",
-    "alt": "HTML logo"
+    "alt": "HTML logo",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
 	},
 	{
 		"name": "CSS",
 		"image": "/skills-css.svg",
-    "alt": "CSS logo"
+    "alt": "CSS logo",
+		"link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
 	},
 	{
 		"name": "Pinia",
 		"image": "/skills-pinia.svg",
-    "alt": "Pinia logo"
+    "alt": "Pinia logo",
+		"link": "https://pinia.vuejs.org/"
 	},
 	{
 		"name": "Vite",
 		"image": "/skills-vite.svg",
-    "alt": "Vite logo"
+    "alt": "Vite logo",
+		"link": "https://vitejs.dev/"
 	},
 	{
 		"name": "TailwindCss",
 		"image": "/skills-tailwind.svg",
-		"alt": "Tailwind css logo"
+		"alt": "Tailwind css logo",
+		"link": "https://tailwindcss.com/"
 	},
 	{
 		"name": "MYSQL",
 		"image": "/skills-mysql.svg",
-		"alt": "My SQL logo"
+		"alt": "My SQL logo",
+		"link": "https://www.mysql.com/"
 	}
 ]
