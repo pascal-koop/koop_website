@@ -68,7 +68,7 @@
 				<NuxtLink
 					:to="project.link"
 					class="work-card-link font-rota text-lg text-textDark mx-8 mb-8 hover:underline"
-					>VIEW ON GITHUB <NuxtImg
+					>VIEW ON GITHUB <img
 						src="/github.svg"
 						alt="external-link"
 						width="20"
