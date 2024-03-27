@@ -59,9 +59,10 @@
 					JUNIOR
 				</button>
 
-				<NuxtImg
+				<img
 					class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[54%] z-1 hidden md:block rounded-lg"
 					:style="{ opacity: imageOpacity }"
+					fetchpriority="high"
 					height="500"
 					width="350"
 					src="/intro-image.webp"

@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n', '@nuxtjs/seo', '@nuxtjs/device'],
-
+	nitro: {
+    compressPublicAssets: true,
+  },
 	ssr: false,
 	i18n: {
 		locales: [
