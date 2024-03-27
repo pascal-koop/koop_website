@@ -10,7 +10,7 @@
 		id="experience-section">
 		<h2 class="title section-title mt-24">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="lg:flex lg:mt-14">
-			<NuxtImg
+			<img
 				class="hidden lg:block rounded-lg lg:shadow-image"
 				src="/experience-desktop.webp"
 				width="400"
@@ -24,7 +24,7 @@
 					<NuxtLink
 						:to="skill.link"
 						class="flex" target="_blank">
-						<NuxtImg
+						<img
 							:src="skill.image"
 							:alt="skill.alt"
 							:width="48"

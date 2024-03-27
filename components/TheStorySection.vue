@@ -9,7 +9,7 @@
 		class="story mx-5">
 		<h2 class="section-title title">{{ $t('sectionTitles.story') }}</h2>
 		<div class="lg:grid lg:grid-flow-col lg:gap-36 lg:mt-14 lg:items-center">
-			<NuxtImg
+			<img
 				class="hidden lg:block story-image rounded-lg lg:shadow-image"
 				src="/story-image.webp"
 				format="webp"

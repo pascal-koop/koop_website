@@ -95,7 +95,7 @@
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
 						class="lg:inline">
-						<NuxtImg
+						<img
 							width="30"
 							height="30"
 							src="/localizeDark.svg"
