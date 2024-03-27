@@ -61,7 +61,7 @@
 					@click="scrollUpOnLogoClick"
 					to="/"
 					class="font-neueRegrade font-bold italic text-lg md:text-[1.55rem] break-words">
-					KOOP PASCAL
+					PASCAL KOOP
 				</NuxtLink>
 			</h1>
 		</div>
@@ -110,7 +110,7 @@
 		<Transition name="mobile">
 			<div
 				v-if="openMenu"
-				class="fixed left-0 z-30 hidden mt-2 mobile-nav p-14 lg:hidden"
+				class="fixed left-0 z-30  mt-2 mobile-nav p-14 lg:hidden"
 				:class="{ active: openMenu }">
 				<ul class="mobile-nav-link-list">
 					<li

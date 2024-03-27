@@ -41,16 +41,16 @@
 			class="inline-block text-textLight text-3xl font-neueRegrade font-medium"
 			>2024</p
 		>
-		<div class="flex items-center justify-end pt-80">
+		<div class="flex items-center md:justify-end pt-80">
 			<div class="absolute mt-6 flex flex-col introduction-content gap-7">
 				<h1
 					:style="{ transform: `translateX(${scrollPosition}px)` }"
-					class="z-10 text-7xl title text-textLight font-neueRegrade font-medium">
+					class="z-10 text-5xl md:text-7xl title text-textLight font-neueRegrade font-medium">
 					FRONT <span class="md:ml-48 z-10">-END</span>
 				</h1>
 				<h1
 					:style="{ transform: `translateX(${-scrollPosition}px)` }"
-					class="z-10 text-7xl font-neueRegrade font-medium title text-textLight md:self-end">
+					class="z-10 text-5xl md:text-7xl font-neueRegrade font-medium title text-textLight md:self-end">
 					DEVELOPER
 				</h1>
 				<button

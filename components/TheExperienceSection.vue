@@ -21,13 +21,17 @@
 					v-for="skill in skills"
 					:key="skill.name"
 					class="skill flex flex-row">
-					<NuxtImg
-						:src="skill.image"
-						:alt="skill.alt"
-						:width="48"
-						:height="48"
-						class="skill-img mr-4 h-[3rem] grayscale lg:hover:grayscale-0 transition-all duration-300 ease-in hover:-translate-y-1 hover:-translate-x-1" />
-					<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
+					<NuxtLink
+						:to="skill.link"
+						class="flex" target="_blank">
+						<NuxtImg
+							:src="skill.image"
+							:alt="skill.alt"
+							:width="48"
+							:height="48"
+							class="skill-img mr-4 h-[3rem] grayscale hover:grayscale-0 transition-all duration-300 ease-in hover:-translate-y-1 hover:-translate-x-1" />
+						<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
+					</NuxtLink>
 				</div>
 			</div>
 		</div>
