@@ -21,7 +21,7 @@
 				class="introduction-arrowsection-title subpixel-antialiased font-rota rotate-90 mb-4 font-medium text-textDark">
 				explore more
 			</p>
-			<NuxtImg
+			<img
 				class="introduction-arrow mt-7 mb-1"
 				width="20"
 				height="20"
