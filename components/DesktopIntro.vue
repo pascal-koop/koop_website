@@ -41,7 +41,7 @@
 			class="inline-block text-textLight text-3xl font-neueRegrade font-medium"
 			>2024</p
 		>
-		<div class="flex items-center justify-end pt-80 mt-24">
+		<div class="flex items-center justify-end pt-80">
 			<div class="absolute mt-6 flex flex-col introduction-content gap-7">
 				<h1
 					:style="{ transform: `translateX(${scrollPosition}px)` }"

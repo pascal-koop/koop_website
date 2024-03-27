@@ -24,7 +24,8 @@ module.exports = {
 		},
 		extend: {
 			boxShadow: {
-				cardImage: '2.4px 4.8px 4.8px hsl(0deg 0% 0% / 43%);'
+				cardImage: '0px 4.8px 4.8px hsl(0deg 0% 0% / 43%);',
+				image: '2.4px 4.8px 4.8px hsl(0deg 0% 0% / 43%);',
 			},
 			animation: {
 				slideInFromLeft: 'slideInFromLeft 2s cubic-bezier(0.19, 1, 0.22, 1)',

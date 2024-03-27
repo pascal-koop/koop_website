@@ -18,7 +18,7 @@
 <template>
 	<TheNavigationSection v-if="isMobileOrTablet" />
 	<TheNavigationSection v-if="userIsScrolling.value && isDesktop" />
-	<main class="overflow-y-none">
+	<main class="overflow-x-hidden">
 		<DesktopIntro v-if="isDesktop" />
 		<TheIntroSection v-else />
 		<TheStorySection />
