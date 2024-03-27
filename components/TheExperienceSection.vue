@@ -13,6 +13,8 @@
 			<NuxtImg
 				class="hidden lg:block rounded-lg lg:shadow-image"
 				src="/experience-desktop.webp"
+				width="400"
+				height="600"
 				alt="A picture of Pascal outside near water in summer" />
 			<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 				<div
