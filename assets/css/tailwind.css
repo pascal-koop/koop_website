@@ -80,7 +80,7 @@
 		@apply overflow-x-hidden;
 	}
 	body {
-		@apply bg-bglight max-w-[1440px] mx-auto;
+		@apply bg-bglight max-w-[1500px] mx-auto;
 	}
 	.title {
 		@apply font-neueRegrade text-[2.75rem] font-bold tracking-wider text-textDark;
