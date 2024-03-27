@@ -16,7 +16,6 @@
 				alt="Pascal staying on a road and the settling sun shines on him from the right"
 				width="400"
 				height="600"
-				loading="lazy"
 				placeholder="empty"/>
 			<p class="story-text whitespace-pre-line font-rota mt-14 lg:mt-0 text-lg leading-relaxed text-textDark">
 				{{ $t('story') }}
