@@ -23,7 +23,7 @@
 			<button
 				v-for="link in contactLinks"
 				:key="link.name"
-				class="contact-btn mx-3 mt-4">
+				class="contact-btn mx-3 mt-4 transition-all duration-300 ease-in hover:-translate-y-1 hover:-translate-x-1">
 				<NuxtLink
 					:to="link.to"
 					:target="link.target"
