@@ -71,6 +71,7 @@
 					>VIEW ON GITHUB <NuxtImg
 						src="/github.svg"
 						alt="external-link"
+						loading="lazy"
 						width="20"
 						height="20"
 						class="inline-block ml-1 align-middle mb-1"
