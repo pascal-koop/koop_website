@@ -8,11 +8,12 @@
 
 @font-face {
 	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Medium.eot');
-	src: url('/fonts/NeueRegrade-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Medium.woff2') format('woff2'), url('/fonts/NeueRegrade-Medium.woff') format('woff'),
-		url('/fonts/NeueRegrade-Medium.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Medium.svg#NeueRegrade-Medium') format('svg');
+	src: url('../../assets/fonts/NeueRegrade-Medium.eot');
+	src: url('../../assets/fonts/NeueRegrade-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/NeueRegrade-Medium.woff2') format('woff2'),
+		url('/fonts/NeueRegrade-Medium.woff') format('woff'),
+		url('../../assets/fonts/NeueRegrade-Medium.ttf') format('truetype'),
+		url('../../assets/fonts/NeueRegrade-Medium.svg#NeueRegrade-Medium') format('svg');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -21,11 +22,12 @@
 /*semi-bold*/
 @font-face {
 	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Semibold.eot');
-	src: url('/fonts/NeueRegrade-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Semibold.woff2') format('woff2'), url('/fonts/NeueRegrade-Semibold.woff') format('woff'),
-		url('/fonts/NeueRegrade-Semibold.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Semibold.svg#NeueRegrade-Semibold') format('svg');
+	src: url('../../assets/fonts/NeueRegrade-Semibold.eot');
+	src: url('../../assets/fonts/NeueRegrade-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/NeueRegrade-Semibold.woff2') format('woff2'),
+		url('../../assets/fonts/NeueRegrade-Semibold.woff') format('woff'),
+		url('../../assets/fonts/NeueRegrade-Semibold.ttf') format('truetype'),
+		url('../../assets/fonts/NeueRegrade-Semibold.svg#NeueRegrade-Semibold') format('svg');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -34,11 +36,12 @@
 /*bold*/
 @font-face {
 	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Bold.eot');
-	src: url('/fonts/NeueRegrade-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Bold.woff2') format('woff2'), url('/fonts/NeueRegrade-Bold.woff') format('woff'),
-		url('/fonts/NeueRegrade-Bold.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Bold.svg#NeueRegrade-Bold') format('svg');
+	src: url('../../assets/fonts/NeueRegrade-Bold.eot');
+	src: url('../../assets/fonts/NeueRegrade-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/NeueRegrade-Bold.woff2') format('woff2'),
+		url('../../assets/fonts/NeueRegrade-Bold.woff') format('woff'),
+		url('../../assets/fonts/NeueRegrade-Bold.ttf') format('truetype'),
+		url('../../assets/fonts/NeueRegrade-Bold.svg#NeueRegrade-Bold') format('svg');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -47,12 +50,12 @@
 /*bold-italic*/
 @font-face {
 	font-family: 'Neue Regrade';
-	src: url('/fonts/NeueRegrade-Bold-Italic.eot');
-	src: url('/fonts/NeueRegrade-Bold-Italic.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/NeueRegrade-Bold-Italic.woff2') format('woff2'),
-		url('/fonts/NeueRegrade-Bold-Italic.woff') format('woff'),
-		url('/fonts/NeueRegrade-Bold-Italic.ttf') format('truetype'),
-		url('/fonts/NeueRegrade-Bold-Italic.svg#NeueRegrade-Bold-Italic') format('svg');
+	src: url('../../assets/fonts/NeueRegrade-Bold-Italic.eot');
+	src: url('../../assets/fonts/NeueRegrade-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/NeueRegrade-Bold-Italic.woff2') format('woff2'),
+		url('../../assets/fonts/NeueRegrade-Bold-Italic.woff') format('woff'),
+		url('../../assets/fonts/NeueRegrade-Bold-Italic.ttf') format('truetype'),
+		url('../../assets/fonts/NeueRegrade-Bold-Italic.svg#NeueRegrade-Bold-Italic') format('svg');
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
@@ -61,21 +64,26 @@
 /*rota-regular*/
 @font-face {
 	font-family: 'Rota';
-	src: url('/fonts/Rota-Regular.eot');
-	src: url('/fonts/Rota-Regular.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/Rota-Regular.woff2') format('woff2'), url('/fonts/Rota-Regular.woff') format('woff'),
-		url('/fonts/Rota-Regular.ttf') format('truetype'), url('/fonts/Rota-Regular.svg#Rota-Regular') format('svg');
+	src: url('../../assets/fonts/Rota-Regular.eot');
+	src: url('../../assets/fonts/Rota-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../assets/fonts/Rota-Regular.woff2') format('woff2'),
+		url('../../assets/fonts/Rota-Regular.woff') format('woff'),
+		url('../../assets/fonts/Rota-Regular.ttf') format('truetype'),
+		url('../../assets/fonts/Rota-Regular.svg#Rota-Regular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @layer base {
+	html {
+		@apply overflow-x-hidden;
+	}
 	body {
-		@apply bg-bglight;
+		@apply bg-bglight max-w-[1440px] mx-auto;
 	}
 	.title {
-		@apply font-neueRegrade  text-[2.75rem] font-bold tracking-wider text-textDark;
+		@apply font-neueRegrade text-[2.75rem] font-bold tracking-wider text-textDark;
 	}
 	.section-title {
 		@apply mt-24 text-center font-semibold;
