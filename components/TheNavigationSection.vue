@@ -133,7 +133,7 @@
 							:to="`${switchLocalePath(locale.code)}`"
 							:class="{ active: openMenu }"
 							class="mobile-nav-link">
-							<NuxtImg
+							<img
 								src="/localizeLight.svg"
 								:alt="`${locale.code} language icon`"
 								class="w-8 h-[3.8rem] mr-4" />
