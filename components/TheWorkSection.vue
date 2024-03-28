@@ -70,7 +70,7 @@
 					class="work-card-link font-rota text-lg text-textDark mx-8 mb-8 hover:underline"
 					>VIEW ON GITHUB <img
 						src="/github.svg"
-						alt="external-link"
+						alt="github icon link"
 						width="20"
 						height="20"
 						class="inline-block ml-1 align-middle mb-1"
