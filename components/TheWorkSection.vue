@@ -66,12 +66,11 @@
 
 				<p class="work-card-text font-rota text-lg text-textDark mx-8 my-11">{{ project.description }}</p>
 				<NuxtLink
-					:to="project.link"
+					:to="project.link" target="_blank"
 					class="work-card-link font-rota text-lg text-textDark mx-8 mb-8 hover:underline"
 					>VIEW ON GITHUB <img
 						src="/github.svg"
 						alt="external-link"
-						target="_blank"
 						width="20"
 						height="20"
 						class="inline-block ml-1 align-middle mb-1"
