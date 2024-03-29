@@ -30,7 +30,7 @@
 <template>
 	<section
 		id="intro-section"
-		class="px-10 bg-bgdark h-[100vh]">
+		class="px-10 bg-bgdark h-[100vh] rounded-b-lg md:mt-0">
 		<h1
 			:style="{ transform: `translateY(${-scrollPosition}px)` }"
 			class="text-textLight text-4xl font-neueRegrade font-medium pt-6 inline-block mr-7 md:mr-60"
