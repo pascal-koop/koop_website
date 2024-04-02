@@ -12,7 +12,7 @@
 
 <template>
 	<section
-		class="experience mx-5"
+		class="experience mx-5 2xl:mx-0"
 		id="experience-section">
 		<h2 class="title section-title">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="lg:flex lg:mt-14">

@@ -5,7 +5,7 @@
 <template>
 	<section
 		id="intro-section"
-		class="introduction mt-52 mx-5">
+		class="introduction mt-52 mx-5 2xl:mx-0">
 		<button
 			class="introduction-chip font-rota font-normal text-base tracking-[0.2em] border-[1px] pb-2 pt-3 px-6 rounded-full text-textDark">
 			JUNIOR

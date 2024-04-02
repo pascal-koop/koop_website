@@ -6,7 +6,7 @@
 	<section
 		ref="target"
 		id="story-section"
-		class="story mx-5">
+		class="story mx-5 2xl:mx-0">
 		<h2 class="section-title title">{{ $t('sectionTitles.story') }}</h2>
 		<div class="lg:grid lg:grid-flow-col lg:gap-36 lg:mt-14 lg:items-center">
 			<img

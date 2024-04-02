@@ -39,7 +39,7 @@
 <template>
 	<section
 		id="works-section"
-		class="work mx-5">
+		class="work mx-5 2xl:mx-0">
 		<h1 class="section-title title">{{ $t('sectionTitles.works') }}</h1>
 		<div
 			class="work-card h-max lg:h-[480px] bg-cardLight pt-1 rounded-xl mt-14 flex flex-col lg:flex-row px-5"
