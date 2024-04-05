@@ -8,7 +8,7 @@
 	const contactLinks: ContactLink[] = [
 		{ name: 'E-MAIL', to: 'mailto:pascale.koop@live.com' },
 		{ name: 'LINKEDIN', to: 'https://www.linkedin.com/in/pascal-koop-343b25207/', target: '_blank' },
-		{ name: 'GITHUB', to: 'https://github.com/Pascale-Cheddar', target: '_blank' }
+		{ name: 'GITHUB', to: 'https://github.com/pascal-koop', target: '_blank' }
 	];
 </script>
 
