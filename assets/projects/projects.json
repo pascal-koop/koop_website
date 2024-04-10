@@ -1,13 +1,13 @@
 [
 	{
-		"title": "Megorei Lead Magnet",
+		"title": "Lead Magnet",
 		"previewLarge": "/megorei-lead-magnet-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.leadMagnet",
 		"link": "https://github.com/Pascale-Cheddar/lead-magnet-tool"
 	},
 	{
-		"title": "megorei scheduler",
+		"title": "Scheduler",
 		"previewLarge": "/megorei-scheduler-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.megoreiScheduler",
