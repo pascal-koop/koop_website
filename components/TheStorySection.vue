@@ -11,7 +11,7 @@
 		<div class="lg:grid lg:grid-flow-col lg:gap-36 lg:mt-14 lg:items-center">
 			<img
 				class="hidden lg:block story-image rounded-lg lg:shadow-image"
-				src="/story-image.webp"
+				src="/story-image.png"
 				format="webp"
 				alt="Pascal staying on a road and the settling sun shines on him from the right"
 				width="400"

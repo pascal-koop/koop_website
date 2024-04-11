@@ -5,14 +5,10 @@
 <template>
 	<section
 		id="intro-section"
-		class="introduction mt-52 mx-5 2xl:mx-0">
-		<button
-			class="introduction-chip font-rota font-normal text-base tracking-[0.2em] border-[1px] pb-2 pt-3 px-6 rounded-full text-textDark">
-			JUNIOR
-		</button>
+		class="introduction mt-28 mx-5 2xl:mx-0">
 		<div class="introduction-content flex flex-col mt-6">
-			<h1 class="title">FRONT -END DEVELOPER</h1>
-			<p class="introduction-text whitespace-pre-line font-rota mt-28 text-lg leading-relaxed text-textDark">
+			<h1 class="title">FRONT-END DEVELOPER</h1>
+			<p class="introduction-text whitespace-pre-line font-rota mt-16 text-lg leading-relaxed text-textDark">
 				{{ $t('intro') }}
 			</p>
 		</div>

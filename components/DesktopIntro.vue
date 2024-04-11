@@ -53,20 +53,14 @@
 					class="z-10 text-5xl md:text-7xl font-neueRegrade font-medium title text-textLight md:self-end">
 					DEVELOPER
 				</h1>
-				<button
-					:style="{ transform: `translateX(${scrollPosition}px)` }"
-					class="self-start md:self-end font-rota font-normal text-xl tracking-[0.2em] border-[1px] pb-2 pt-3 px-7 rounded-full text-textLight z-20">
-					JUNIOR
-				</button>
-
 				<img
 					class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[54%] z-1 hidden md:block rounded-lg"
 					:style="{ opacity: imageOpacity }"
 					fetchpriority="high"
 					height="500"
 					width="350"
-					src="/intro-image.webp"
-					format="webp"
+					src="/intro-image2.png"
+					format="png"
 					alt="desktop intro image"/>
 			</div>
 		</div>

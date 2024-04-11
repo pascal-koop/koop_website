@@ -18,7 +18,7 @@
 		<div class="lg:flex lg:mt-14">
 			<img
 				class="hidden lg:block rounded-lg lg:shadow-image"
-				src="/experience-desktop.webp"
+				src="/experience-desktop.png"
 				width="400"
 				height="600"
 				alt="A picture of Pascal outside near water in summer" />
