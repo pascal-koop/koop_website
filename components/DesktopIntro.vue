@@ -59,8 +59,8 @@
 					fetchpriority="high"
 					height="500"
 					width="350"
-					src="/intro-image2.png"
-					format="png"
+					src="/intro-image2.webp"
+					format="webp"
 					alt="desktop intro image"/>
 			</div>
 		</div>

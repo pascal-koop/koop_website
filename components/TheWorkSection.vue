@@ -50,6 +50,7 @@
 				loading="lazy"
 				width="400"
 				height="300"
+				formats="webp"
 				alt="work-preview-image"
 				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage"
 				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast;"

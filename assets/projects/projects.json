@@ -1,21 +1,21 @@
 [
 	{
 		"title": "Lead Magnet",
-		"previewLarge": "/megorei-lead-magnet-desktop.png",
+		"previewLarge": "/megorei-lead-magnet-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.leadMagnet",
 		"link": "https://github.com/Pascale-Cheddar/lead-magnet-tool"
 	},
 	{
 		"title": "Scheduler",
-		"previewLarge": "/megorei-scheduler-desktop.png",
+		"previewLarge": "/megorei-scheduler-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.megoreiScheduler",
 		"link": "https://github.com/Pascale-Cheddar/scheduler"
 	},
 	{
 		"title": "cocktail bar",
-		"previewLarge": "/cocktail-bar-desktop.png",
+		"previewLarge": "/cocktail-bar-desktop.webp",
 		"tech": ["vue", "vite", "css", "html", "mysql", "prisma orm", "node.js"],
 		"description": "projects.description.cocktailBar",
 		"link": "https://github.com/Pascale-Cheddar/cocktail_bar"
