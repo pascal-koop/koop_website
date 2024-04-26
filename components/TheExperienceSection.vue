@@ -12,9 +12,9 @@
 
 <template>
 	<section
-		class="experience mx-5 2xl:mx-0"
+		class="experience mx-5 2xl:mx-0 mt-24"
 		id="experience-section">
-		<h2 class="title section-title">{{ $t('sectionTitles.experience') }}</h2>
+		<h2 class="section-title">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="lg:flex lg:mt-14">
 			<img
 				class="hidden lg:block rounded-lg lg:shadow-image"

@@ -10,7 +10,6 @@
 			lang: 'en'
 		}
 	});
-	const { isDesktop, isMobileOrTablet } = useDevice();
 	const userIsScrolling = computed(() => useState('userIsScrolling'));
 </script>
 <style>
@@ -24,15 +23,14 @@
 </style>
 
 <template>
-	<TheNavigationSection v-if="isMobileOrTablet" />
+
 	<Transition name="desktop-nav">
-		<TheNavigationSection v-if="userIsScrolling.value && isDesktop" />
+		<TheNavigationSection v-if="userIsScrolling.value" />
 	</Transition>
 	<main class="overflow-x-hidden relative z-[1]">
-		<DesktopIntro v-if="isDesktop" />
-		<TheIntroSection v-else />
+		<TheIntroSection/>
 		<TheStorySection />
-		<TheWorkSection />
+		<TheProjectsSection />
 		<TheExperienceSection />
 		<TheContactsSection />
 	</main>
