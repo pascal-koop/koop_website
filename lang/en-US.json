@@ -1,18 +1,32 @@
 {
 	"navigation": {
-		"story": "STORY",
-		"works": "PROJECTS",
-		"experience": "EXPERIENCE",
-		"contacts": "CONTACT"
+		"story": "about me",
+		"projects": "projects",
+		"experience": "experience",
+		"contacts": "contact"
 	},
   "sectionTitles": {
-    "story": "My Story",
-    "works": "My Projects",
-    "experience": "My Experience",
-    "contacts": "Contact"
+    "story": "about me",
+    "projects": "projects",
+    "experience": "experience",
+    "contacts": "contact"
   },
   "intro": "Moin! \n I'm Pascal, a ambitious front-end developer actively seeking new challenges, driven by a passion for learning daily and crafting engaging user interfaces.",
-  "story": "My journey to becoming a computer scientist started with a completed apprenticeship as a carpenter and various jobs. But, during the Corona pandemic, I discovered the world of web development, and I realized that I wanted to continue to develop myself further. So, I spent a year learning with great enthusiasm, and the more I delved into it, the more I became passionate about it. That's when I decided to start my training as a computer scientist. \n\n I am an open-minded individual who is always eager to learn new things quickly. In my free time, I enjoy reading, Calisthenics (a mixture of strength training and gymnastics), meditation, and house dance. \n\n I believe that my ability to continuously face new challenges, as well as my excellent team-oriented and communication skills, make me a valuable addition to any team. I am convinced that my passion for technology and my willingness to constantly learn can contribute to the development of creative solutions and support the team on its path to success.",
+  "story":
+		{
+		"firstSegment": {
+			"title": "From bartender to web developer",
+			"content": "I discovered web development during the pandemic and spent a year learning on my own with determination, after that started my education as a Computer science expert in Hamburg Germany."
+		},
+		"secondSegment": {
+			"title": "Versatile and willing to learn",
+			"content": "I am open to new things and quickly familiarise myself with various topics. In addition to technology, I am interested in reading, calisthenics, meditation and house dancing."
+		},
+		"thirdSegment": {
+			"title": "Passion for innovation",
+			"content": "I love technology and always want to learn new stuff. Working with a team to come up with new ideas and learn from each other is what I enjoy the most."
+		}
+	},
   "projects": {
 		"description": {
 			"leadMagnet": "You wanted to read an article and had to give your contact details in order to read it. annoying, right? I have coded one of these lead magnets. \n\nThe SPA enables the targeted placement of a lead magnet link to articles, whitepapers or other content created by megorei or an advertising agency. \n\n Interested customers can click on the link, leave their contact details and automatically receive a confirmation email. With a link to the download page. \n\n This process is used to provide potential customers with access to relevant content and to collect important contact information for targeted marketing strategies.",
