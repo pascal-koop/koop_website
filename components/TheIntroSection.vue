@@ -33,7 +33,7 @@
 		class="px-10 bg-bgdark h-[100vh] rounded-b-lg">
 		<h1
 			:style="{ transform: `translateY(${-scrollPosition}px)` }"
-			class="text-textLight text-xl md:text-4xl font-neueRegrade font-medium pt-6 inline-block mr-7 md:mr-60"
+			class="text-textLight text-2xl md:text-4xl font-neueRegrade font-medium pt-6 inline-block mr-7 md:mr-60"
 			>Pascal Koop</h1
 		>
 		<p
