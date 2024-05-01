@@ -59,7 +59,7 @@
 					:style="{ opacity: imageOpacity }"
 					height="592"
 					width="350"
-					sizes="lg:592px md:520px"
+					sizes="md:592px"
 					src="/intro-image2.webp"
 					format="webp"
 					alt="desktop intro image" />
@@ -68,7 +68,8 @@
 					:style="{ opacity: imageOpacity }"
 					height="284"
 					width="305"
-					sizes="sm:305px md:400px lg:500px xl:600px"
+					sizes="sm:305px"
+					:placeholder="[50, 25]"
 					src="/intro-image-mobile.webp"
 					format="webp"
 					alt="desktop intro image" />
