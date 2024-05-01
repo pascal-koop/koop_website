@@ -45,11 +45,12 @@
 			class="work-card h-max bg-cardLight rounded-xl mt-20 md:pt-8 mb-6 flex flex-col lg:flex-row px-5"
 			v-for="project in projectData"
 			:key="project.link">
-			<img
+			<NuxtImg
 				:src="project.previewLarge"
-				loading="lazy"
+				lazy
 				width="400"
-				height="300"
+				height="285.3"
+				sizes="sm:285.3px md:400px lg:500px xl:600px"
 				formats="webp"
 				alt="work-preview-image"
 				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage"
