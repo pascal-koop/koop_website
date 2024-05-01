@@ -57,18 +57,18 @@
 				<NuxtImg
 					class="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-[54%] z-1 hidden md:block rounded-lg"
 					:style="{ opacity: imageOpacity }"
-					height="500"
+					height="592"
 					width="350"
-					sizes="lg:520px sm:400px md:520px lg:600px xl:700px"
+					sizes="lg:592px md:520px"
 					src="/intro-image2.webp"
 					format="webp"
 					alt="desktop intro image" />
 				<NuxtImg
 					class="z-1 rounded-lg mt-12 md:hidden mx-auto"
 					:style="{ opacity: imageOpacity }"
-					height="298"
+					height="284"
 					width="305"
-					sizes="sm:298px md:305px lg:350px xl:400px"
+					sizes="sm:305px md:400px lg:500px xl:600px"
 					src="/intro-image-mobile.webp"
 					format="webp"
 					alt="desktop intro image" />
