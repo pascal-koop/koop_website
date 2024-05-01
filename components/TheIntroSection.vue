@@ -69,8 +69,8 @@
 					loading="lazy"
 					height="298"
 					width="305"
-					src="/intro-image-mobile.png"
-					format="png"
+					src="/intro-image-mobile.webp"
+					format="webp"
 					alt="desktop intro image" />
 			</div>
 

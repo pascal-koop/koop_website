@@ -42,7 +42,7 @@
 		class="work mx-5 2xl:mx-0 mt-24">
 		<h1 class="section-title">{{ $t('sectionTitles.projects') }}</h1>
 		<div
-			class="work-card h-max bg-cardLight rounded-xl mt-20 mb-6 flex flex-col lg:flex-row px-5"
+			class="work-card h-max bg-cardLight rounded-xl mt-20 md:pt-8 mb-6 flex flex-col lg:flex-row px-5"
 			v-for="project in projectData"
 			:key="project.link">
 			<img
