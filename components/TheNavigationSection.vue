@@ -20,13 +20,15 @@
 		{ name: t('navigation.contacts'), to: '#contacts-section' }
 	]);
 
-	watchEffect(() => {
-		 if (openMenu.value) {
-        document.documentElement.style.overflowY = 'hidden';
-      } else {
-        document.documentElement.style.overflowY = 'auto';
-      }
-	});
+
+
+watch(openMenu, (newValue) => {
+	if (newValue) {
+		document.documentElement.style.overflowY = 'hidden';
+	} else {
+		document.documentElement.style.overflowY = 'auto';
+	}
+});
 
 	const toggleMenu = () => {
 		openMenu.value = !openMenu.value;
@@ -118,7 +120,7 @@
 		<Transition name="mobile">
 			<div
 				v-if="openMenu"
-				class="fixed left-0 z-30  mt-2 mobile-nav px-14 lg:hidden"
+				class="fixed left-0 z-30  mt-2 mobile-nav px-14 lg:hidden items-center"
 				:class="{ active: openMenu }">
 				<ul class="mobile-nav-link-list">
 					<li

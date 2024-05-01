@@ -30,7 +30,7 @@
 <template>
 	<section
 		id="intro-section"
-		class="px-10 bg-bgdark h-[100vh] rounded-b-lg">
+		class="px-10 bg-bgdark h-[100vh]">
 		<h1
 			:style="{ transform: `translateY(${-scrollPosition}px)` }"
 			class="text-textLight text-2xl md:text-4xl font-neueRegrade font-medium pt-6 inline-block mr-7 md:mr-60"
@@ -41,26 +41,36 @@
 			class="inline-block text-textLight text-2xl md:text-3xl font-neueRegrade font-medium"
 			>2024</p
 		>
-		<div class="flex justify-center items-center md:justify-end pt-48 md:pt-80">
-			<div class="absolute mt-6 flex flex-col introduction-content gap-7">
+		<div class="h-svh flex items-center justify-center md:justify-end">
+			<div class="absolute p-1 md:pl-0 md:mt-6 md:flex md:flex-col introduction-content md:gap-7">
 				<h1
 					:style="{ transform: `translateX(${scrollPosition}px)` }"
-					class="z-10 text-5xl md:text-7xl title text-textLight font-neueRegrade font-bold uppercase">
+					class="z-10 text-5xl md:text-7xl title text-textLight font-neueRegrade font-bold uppercase ">
 					front <span class="md:ml-48 z-10">-end</span>
 				</h1>
 				<h1
 					:style="{ transform: `translateX(${-scrollPosition}px)` }"
-					class="z-10 text-5xl md:text-7xl font-neueRegrade font-bold title text-textLight md:self-end uppercase">
+
+					class="z-10 text-5xl md:text-7xl font-neueRegrade font-bold title text-textLight top-6 md:self-end uppercase">
 					developer
 				</h1>
 				<img
-					class="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-[54%] z-1 block rounded-lg "
+					class="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-[54%] z-1 hidden md:block rounded-lg"
 					:style="{ opacity: imageOpacity }"
-					fetchpriority="high"
+					loading="lazy"
 					height="500"
 					width="350"
 					src="/intro-image2.webp"
 					format="webp"
+					alt="desktop intro image" />
+				<img
+					class="z-1 rounded-lg mt-12 md:hidden mx-auto"
+					:style="{ opacity: imageOpacity }"
+					loading="lazy"
+					height="298"
+					width="305"
+					src="/intro-image-mobile.png"
+					format="png"
 					alt="desktop intro image" />
 			</div>
 
