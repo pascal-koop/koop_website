@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 	nitro: {
     compressPublicAssets: true,
   },
+	image: {
+		quality: 100,
+	},
 	ssr: false,
 	i18n: {
 		locales: [

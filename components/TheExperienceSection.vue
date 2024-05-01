@@ -16,12 +16,13 @@
 		id="experience-section">
 		<h2 class="section-title">{{ $t('sectionTitles.experience') }}</h2>
 		<div class="lg:flex lg:mt-14">
-			<img
+			<NuxtImg
 				class="hidden lg:block rounded-lg lg:shadow-image"
 				src="/experience-desktop.webp"
 				format="webp"
 				width="400"
 				height="600"
+				sizes="sm:400px md:500px lg:600px xl:700px"
 				alt="A picture of Pascal outside near water in summer" />
 			<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 				<div
@@ -35,8 +36,8 @@
 						<img
 							:src="skill.image"
 							:alt="skill.alt"
-							:width="48"
-							:height="48"
+							width="48"
+							height="48"
 							class="skill-img mr-4 h-[3rem] md:grayscale md:hover:grayscale-0" />
 						<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
 					</NuxtLink>
