@@ -59,6 +59,7 @@
 					:style="{ opacity: imageOpacity }"
 					height="592"
 					width="350"
+					loading="lazy"
 					sizes="md:592px"
 					src="/intro-image2.webp"
 					format="webp"
@@ -66,6 +67,7 @@
 				<NuxtImg
 					class="z-1 rounded-lg mt-12 md:hidden mx-auto"
 					:style="{ opacity: imageOpacity }"
+					loading="lazy"
 					height="284"
 					width="305"
 					sizes="sm:305px"
