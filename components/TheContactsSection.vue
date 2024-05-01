@@ -17,8 +17,8 @@
 <template>
 	<section
 		id="contacts-section"
-		class="contacts mx-5 2xl:mx-0 mb-2">
-		<h2 class="section-title title">{{ $t('sectionTitles.contacts') }}</h2>
+		class="contacts mx-5 2xl:mx-0 mb-2 mt-24">
+		<h2 class="section-title">{{ $t('sectionTitles.contacts') }}</h2>
 		<div class="contacts-content my-4 flex flex-col lg:flex-row justify-center">
 			<button
 				v-for="link in contactLinks"

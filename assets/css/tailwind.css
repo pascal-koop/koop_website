@@ -83,13 +83,7 @@
 	body {
 		@apply bg-bglight max-w-[1500px] mx-auto;
 	}
-	section {
-		@apply mt-24;
-	}
-	.title {
-		@apply font-neueRegrade text-[2.75rem] font-bold tracking-wider text-textDark;
-	}
 	.section-title {
-		@apply text-center font-semibold;
+		@apply text-center font-neueRegrade tracking-wider text-textDark text-[2.75rem] font-semibold uppercase;
 	}
 }
