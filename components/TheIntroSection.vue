@@ -57,7 +57,6 @@
 				<img
 					class="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-[54%] z-1 hidden md:block rounded-lg"
 					:style="{ opacity: imageOpacity }"
-					loading="lazy"
 					height="500"
 					width="350"
 					src="/intro-image2.webp"
@@ -66,7 +65,6 @@
 				<img
 					class="z-1 rounded-lg mt-12 md:hidden mx-auto"
 					:style="{ opacity: imageOpacity }"
-					loading="lazy"
 					height="298"
 					width="305"
 					src="/intro-image-mobile.webp"
