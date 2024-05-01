@@ -19,6 +19,7 @@
 			<NuxtImg
 				class="hidden lg:block rounded-lg lg:shadow-image"
 				src="/experience-desktop.webp"
+				loading="lazy"
 				format="webp"
 				width="400"
 				height="600"
@@ -36,6 +37,7 @@
 						<img
 							:src="skill.image"
 							:alt="skill.alt"
+							loading="lazy"
 							width="48"
 							height="48"
 							class="skill-img mr-4 h-[3rem] md:grayscale md:hover:grayscale-0" />
