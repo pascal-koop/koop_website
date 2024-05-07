@@ -59,7 +59,7 @@
 					:style="{ opacity: imageOpacity }"
 					height="592"
 					width="350"
-					sizes="md:592px"
+					sizes="md:592px lg:592px xl:592px"
 					src="/intro-image2.webp"
 					format="webp"
 					alt="desktop intro image" />
