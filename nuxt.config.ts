@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 	nitro: {
     compressPublicAssets: true,
   },
+	css: ['animate.css'],
 	image: {
 		quality: 100,
 	},
