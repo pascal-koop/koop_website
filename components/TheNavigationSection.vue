@@ -136,11 +136,11 @@ watch(openMenu, (newValue) => {
 						</NuxtLink>
 					</li>
 					<li
-					    @click="toggleMenu"
 						v-for="locale in availableLocales"
 						:key="`${locale.code} language icon`"
 						class="flex internationalization-links mt-11">
 						<NuxtLink
+						    @click="toggleMenu"
 							:to="`${switchLocalePath(locale.code)}`"
 							:class="{ active: openMenu }"
 							class="mobile-nav-link">
