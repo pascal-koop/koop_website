@@ -63,8 +63,8 @@ watch(openMenu, (newValue) => {
 </style>
 
 <template>
-	<nav class="fixed top-0 z-30 flex flex-row items-center justify-between h-20 px-5 py-4 w-svw bg-bglight shadow-md max-w-[1500px]">
-		<div class="w-20 nav-logo md:w-max">
+	<nav class="fixed top-0 z-30 flex flex-row items-center justify-between h-20 py-4 w-svw bg-bglight max-w-[1500px]">
+		<div class="w-20 nav-logo md:w-max ml-[30px]">
 			<h1
 				class="transition duration-300 ease-in scale-110 text-pretty md:delay-150 hover:-translate-y-1 hover:-translate-x-1">
 				<NuxtLink
@@ -100,18 +100,19 @@ watch(openMenu, (newValue) => {
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class="transition duration-300 ease-in delay-150 scale-110 internationalization-links hover:-translate-y-1 hover:-translate-x-1 ">
+					class=" flex transition duration-300 ease-in delay-150 scale-110 internationalization-links hover:-translate-y-1 hover:-translate-x-1 ">
+
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
-						class="lg:inline font-rota align-middle">
+						class="lg:inline font-rota">
 						<img
 							width="35"
 							height="35"
 							src="/localizeDark.svg"
 							:alt="locale.code"
-							class="w-3 h-[3.8rem] lg:min-w-7 lg:mb-2 text-textlight lg:inline  lg:h-[1.3rem]" />
-						<span class="font-rota text-[1rem] align-middle">{{ locale.code }}</span>
+							class="w-3 h-[3.8rem] lg:min-w-7  text-textlight lg:inline  lg:h-[1.3rem]" />
+						<p class="font-rota text-[1rem] inline">{{ locale.code }}</p>
 					</NuxtLink>
 				</li>
 			</ul>

@@ -29,7 +29,7 @@
 				<div
 					v-for="skill in skills"
 					:key="skill.name"
-					class="skill flex flex-row transition-all duration-300 ease-in hover:-translate-y-1 hover:-translate-x-1">
+					class="skill group flex flex-row transition-all duration-300 ease-in hover:-translate-y-1 hover:-translate-x-1">
 					<NuxtLink
 						:to="skill.link"
 						class="flex"
@@ -40,7 +40,7 @@
 							loading="lazy"
 							width="48"
 							height="48"
-							class="skill-img mr-4 h-[3rem] md:grayscale md:hover:grayscale-0" />
+							class="skill-img mr-4 h-[3rem] md:grayscale md:group-hover:grayscale-0" />
 						<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
 					</NuxtLink>
 				</div>

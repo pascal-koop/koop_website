@@ -9,6 +9,9 @@
 		tech: string[];
 		description: string;
 		link: string;
+		format: string;
+		liveLink?: string;
+		liveLinkText?: string;
 	}
 
 	const projectsArray: Ref<[string, Project][]> = computed(() => Object.entries(projects));
@@ -31,7 +34,7 @@
 			@apply text-textLight;
 		}
 		img {
-			@apply lg:order-1;
+			@apply lg:order-1 mr-20 ml-0;
 		}
 	}
 </style>
@@ -42,16 +45,16 @@
 		class="work mx-5 2xl:mx-0 mt-24">
 		<h1 class="section-title">{{ $t('sectionTitles.projects') }}</h1>
 		<div
-			class="work-card h-max bg-cardLight rounded-xl mt-20 md:pt-8 mb-6 flex flex-col lg:flex-row px-5"
+			class="work-card min-h-52 h-max bg-cardLight rounded-xl mt-20 md:pt-8 mb-6 flex flex-col lg:flex-row px-5"
 			v-for="project in projectData"
 			:key="project.link">
 			<NuxtImg
 				:src="project.previewLarge"
+				:format="project.format"
 				lazy
 				width="400"
 				height="285.3"
 				sizes="sm:285.3px md:400px lg:500px xl:600px"
-				formats="webp"
 				alt="work-preview-image"
 				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage"
 				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast" />
@@ -76,6 +79,12 @@
 						width="20"
 						height="20"
 						class="inline-block ml-1 align-middle mb-1" />
+				</NuxtLink>
+				<NuxtLink v-if="project.liveLink"
+					:to="project.liveLink"
+					target="_blank"
+					class="work-card-link font-rota font-normal text-lg text-textDark hover:underline uppercase"
+					>{{ project.liveLinkText }}
 				</NuxtLink>
 			</div>
 		</div>
