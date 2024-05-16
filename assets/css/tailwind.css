@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* !es müssen noch die custom fonts entfernt werden, die nicht mehr benötigt werden! */
-/* custom fonts*/
-/*neue regrade*/
-/* medium */
 
 @font-face {
 	font-family: 'Neue Regrade';

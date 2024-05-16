@@ -25,7 +25,7 @@
 
 <style>
 	.work-card:nth-of-type(odd) {
-		@apply bg-cardDark;
+		@apply bg-cardDark ml-0;
 		.work-card-subtitle,
 		.work-card-text,
 		.work-card-link,
@@ -34,7 +34,7 @@
 			@apply text-textLight;
 		}
 		img {
-			@apply lg:order-1 mr-20 ml-0;
+			@apply lg:order-1 lg:mr-20 md:mx-auto;
 		}
 	}
 </style>
