@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import useIntersectionObserver from '~/composable/useIntersectionObserver';
+	// import useIntersectionObserver from '~/composable/useIntersectionObserver';
 	const contactsSection = ref();
 	type ContactLink = {
 		name: string;
@@ -17,10 +17,10 @@
 		{ name: 'GITHUB', to: 'https://github.com/pascal-koop', target: '_blank' }
 	];
 
-	const { observeElement } = useIntersectionObserver();
-	onMounted(() => {
-		observeElement(contactsSection.value, 'animate__fadeInUp', 0.7);
-	});
+	// const { observeElement } = useIntersectionObserver();
+	// onMounted(() => {
+	// 	observeElement(contactsSection.value, 'animate__fadeInUp', 0.7);
+	// });
 </script>
 
 <style></style>

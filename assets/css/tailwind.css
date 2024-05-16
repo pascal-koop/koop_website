@@ -82,6 +82,28 @@
 	}
 	body {
 		@apply bg-bglight max-w-[1500px] mx-auto;
+		--sb-track-color: #faf0e6;
+		--sb-thumb-color: #232121;
+		--sb-size: 8px;
+	}
+	body::-webkit-scrollbar {
+		width: var(--sb-size);
+	}
+
+	body::-webkit-scrollbar-track {
+		background: var(--sb-track-color);
+		border-radius: 3px;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background: var(--sb-thumb-color);
+		border-radius: 3px;
+	}
+
+	@supports not selector(::-webkit-scrollbar) {
+		body {
+			scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+		}
 	}
 	.section-title {
 		@apply text-center font-neueRegrade tracking-wider text-textDark text-[2.75rem] font-semibold uppercase;

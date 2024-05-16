@@ -1,23 +1,36 @@
 [
 	{
+		"title": "super kung vue",
+		"previewLarge": "/kv.webp",
+		"tech": ["vue", "nuxt", "tailwindcss", "html", "playwright"],
+		"description": "projects.description.superKungVue",
+		"link": "https://github.com/HDenizD/super-kung-vue",
+		"liveLink": "https://hdenizd.github.io/super-kung-vue/",
+		"liveLinkText": "Live Version",
+		"format": "webp"
+	},
+	{
 		"title": "Lead Magnet",
 		"previewLarge": "/megorei-lead-magnet-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.leadMagnet",
-		"link": "https://github.com/Pascale-Cheddar/lead-magnet-tool"
+		"link": "https://github.com/Pascale-Cheddar/lead-magnet-tool",
+		"format": "webp"
 	},
 	{
 		"title": "Scheduler",
 		"previewLarge": "/megorei-scheduler-desktop.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "directus cms", "html"],
 		"description": "projects.description.megoreiScheduler",
-		"link": "https://github.com/Pascale-Cheddar/scheduler"
+		"link": "https://github.com/Pascale-Cheddar/scheduler",
+		"format": "webp"
 	},
 	{
 		"title": "cocktail bar",
 		"previewLarge": "/cocktail-bar-desktop.webp",
 		"tech": ["vue", "vite", "css", "html", "mysql", "prisma orm", "node.js"],
 		"description": "projects.description.cocktailBar",
-		"link": "https://github.com/Pascale-Cheddar/cocktail_bar"
+		"link": "https://github.com/Pascale-Cheddar/cocktail_bar",
+		"format": "webp"
 	}
 ]
