@@ -72,7 +72,7 @@ watch(openMenu, (newValue) => {
 				<li
 					v-for="link in links"
 					:key="link.name"
-					class="transition duration-300 ease-in delay-150 scale-110 desktop-nav-list-item hover:-translate-y-1 hover:-translate-x-1 uppercase font-rota">
+					class="transition duration-300 ease-in delay-150 scale-110 desktop-nav-list-item hover:-translate-y-1 hover:-translate-x-1 uppercase font-neueRegrade">
 					<NuxtLink
 						:to="link.to"
 						class="px-4">
@@ -87,14 +87,14 @@ watch(openMenu, (newValue) => {
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
-						class="lg:inline font-rota">
+						class="lg:inline font-neueRegrade">
 						<!-- <img
 							width="35"
 							height="35"
 							src="/localizeDark.svg"
 							:alt="locale.code"
 							class="w-3 h-[3.8rem] lg:min-w-7  text-textlight lg:inline  lg:h-[1.3rem]" /> -->
-						<p class="font-rota text-[1rem] inline font-bold" >DE / EN</p>
+						<p class="desktop-nav-list-item px-4 font-neueRegrade text-[1rem] inline font-bold" >DE / EN</p>
 					</NuxtLink>
 				</li>
 			</ul>
