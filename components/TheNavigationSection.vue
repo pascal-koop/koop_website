@@ -72,7 +72,7 @@ watch(openMenu, (newValue) => {
 				<li
 					v-for="link in links"
 					:key="link.name"
-					class="transition duration-300 ease-in delay-150 scale-110 desktop-nav-list-item hover:-translate-y-1 hover:-translate-x-1 uppercase font-neueRegrade">
+					class="transition duration-200 ease-in delay-100 scale-110 desktop-nav-list-item hover:-translate-y-1 hover:-translate-x-1 uppercase font-neueRegrade">
 					<NuxtLink
 						:to="link.to"
 						class="px-4">
@@ -82,7 +82,7 @@ watch(openMenu, (newValue) => {
 				<li
 					v-for="locale in availableLocales"
 					:key="locale.code"
-					class=" flex transition duration-300 ease-in delay-150 scale-110 internationalization-links hover:-translate-y-1 hover:-translate-x-1 ">
+					class=" flex transition duration-200 ease-in delay-100 scale-110 internationalization-links hover:-translate-y-1 hover:-translate-x-1 ">
 
 					<NuxtLink
 						:to="switchLocalePath(locale.code)"
