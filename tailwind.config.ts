@@ -10,8 +10,9 @@ module.exports = {
 			'2xl': '1516px'
 		},
     fontFamily: {
-      'neueRegrade': ['Neue Regrade', 'sans-serif'],
-      'rota': ['Rota', 'sans-serif'],
+      'neueRegrade': ['Neue Regrade', 'Arial', 'sans-serif'],
+      'rota': ['Rota', 'Arial', 'sans-serif'],
+      'arial': ['Arial', 'sans-serif'],
     },
 		colors: {
 			bglight: '#FAF0E6',

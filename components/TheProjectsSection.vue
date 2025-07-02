@@ -43,7 +43,9 @@
 		document.documentElement.style.overflow = 'auto';
 	};
 
-
+	const transformTitle = (title: string) => {
+  return title.toLocaleUpperCase('de-DE').replace(/SS/g, 'ß');
+};
 </script>
 
 
@@ -68,10 +70,10 @@
 				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage cursor-pointer hover:opacity-90 transition-opacity"
 				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast"
 				@click="openModal(project)" />
-			<div class="work-tech-stack flex flex-col md:mx-8 my-6 break-words">
+			<div class="work-tech-stack flex flex-col md:mx-8 my-6 break-words hyphens-auto">
 				<h2
-					class="work-card-subtitle font-neueRegrade text-4xl font-bold text-textDark uppercase hyphens-manual"
-					>{{ project.title }}&nbsp;
+					class="work-card-subtitle font-neueRegrade text-4xl font-bold  text-textDark  hyphens-auto"
+					>{{ transformTitle(project.title) }}&nbsp;
 				</h2>
 					<h3 class="work-tech-stack-text font-rota text-base text-textDark uppercase inline-block">{{
 						project.tech.join(',&nbsp; ')
