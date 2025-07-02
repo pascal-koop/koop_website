@@ -9,6 +9,15 @@
 		"format": "webp"
 	},
 	{
+		"title": "Freche Möwe Comedy Club",
+		"previewLarge": "/freche-moewe.webp",
+		"tech": ["vue", "vite", "primevue", "directus"],
+		"description": "projects.description.frecheMoewe",
+		"companyLink": "https://freche-moewe.de",
+		"companyLinkText": "Freche Möwe Comedy Club",
+		"format": "webp"
+	},
+	{
 		"title": "super kung vue",
 		"previewLarge": "/kv.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "html", "playwright"],
