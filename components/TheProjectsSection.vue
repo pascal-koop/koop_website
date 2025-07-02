@@ -29,24 +29,21 @@
 	const openModal = (project: Project) => {
 		selectedProject.value = project;
 		showModal.value = true;
+		document.body.style.overflow = 'hidden';
+		document.documentElement.style.overflow = 'hidden';
+
 	};
+
+	const closeModal = () => {
+		showModal.value = false;
+		document.body.style.overflow = 'auto';
+		document.documentElement.style.overflow = 'auto';
+	};
+
+
 </script>
 
-<style>
-	.work-card:nth-of-type(odd) {
-		@apply bg-cardDark ml-0;
-		.work-card-subtitle,
-		.work-card-text,
-		.work-card-link,
-		.work-tech-stacksection-title,
-		.work-tech-stack-text {
-			@apply text-textLight;
-		}
-		img {
-			@apply lg:order-1 lg:mr-20 md:mx-auto;
-		}
-	}
-</style>
+
 
 <template>
 	<section
@@ -112,6 +109,22 @@
 			:image-src="selectedProject?.previewLarge || ''"
 			:image-format="selectedProject?.format || ''"
 			:image-alt="selectedProject?.title || ''"
+
 		/>
 	</section>
 </template>
+<style>
+	.work-card:nth-of-type(odd) {
+		@apply bg-cardDark ml-0;
+		.work-card-subtitle,
+		.work-card-text,
+		.work-card-link,
+		.work-tech-stacksection-title,
+		.work-tech-stack-text {
+			@apply text-textLight;
+		}
+		img {
+			@apply lg:order-1 lg:mr-20 md:mx-auto;
+		}
+	}
+</style>
