@@ -15,6 +15,7 @@
 
 <script setup lang="ts">
 function closeModal() {
+
   emit('update:modelValue', false);
   document.body.style.overflow = 'auto';
   document.documentElement.style.overflow = 'auto';
