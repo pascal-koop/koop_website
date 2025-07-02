@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Digitale KiTa-Sozialermäßigung im Kreis Rendsburg-Eckernförde",
+		"previewLarge": "verwaltungscloud.webp",
+		"tech": ["vue 3", "typescript", "quasar", "i18n", "playwright", "storybook"],
+		"description": "projects.description.kitaSozialermaeßigung",
+		"companyLink": "https://verwaltungscloud.sh",
+		"companyLinkText": "Verwaltungscloud.SH",
+		"format": "webp"
+	},
+	{
 		"title": "super kung vue",
 		"previewLarge": "/kv.webp",
 		"tech": ["vue", "nuxt", "tailwindcss", "html", "playwright"],

@@ -14,16 +14,16 @@
 	"intro": "Moin! \n Ich bin Pascal, ein Front-end Developer, der aktiv nach neuen Herausforderungen sucht, angetrieben von einer Leidenschaft, täglich zu lernen und ansprechende Benutzeroberflächen zu gestalten.",
 	"story": {
 		"firstSegment": {
-			"title": "vom Barkeeper zum Webentwickler",
+			"title": "Vom Barkeeper zum Webentwickler",
 			"content": "Ich habe die Webentwicklung während der Pandemie entdeckt und ein Jahr lang zielstrebig im Selbststudium gelernt, danach habe ich eine Ausbildung zum Fachinformatiker in Hamburg begonnen."
 		},
 		"secondSegment": {
-			"title": "vielseitig und offen für Neues",
+			"title": "Vielseitig und offen für Neues",
 			"content": "Ich bin offen für Neues und arbeite mich schnell in verschiedene Themen ein. Neben der Technik interessiere ich mich für Lesen, Calisthenics, Meditation und House Dance."
 		},
 		"thirdSegment": {
-			"title": "leidenschaft für innovation",
-			"content": "Ich liebe Technik und will immer neue dinge lernen. Am meisten Spaß macht mir die Zusammenarbeit mit einem Team, das neue Ideen entwickelt und voneinander lernt."
+			"title": "Leidenschaft für Innovation",
+			"content": "Ich liebe das Technische und die Programmierung, neues zu lernen und zu entwickeln. Am meisten Spaß macht mir die Zusammenarbeit mit einem Team, das neue Ideen entwickelt und voneinander lernt."
 		}
 	},
 	"projects": {
@@ -31,7 +31,8 @@
 			"superKungVue": "Manchmal hat man das gefühl, die funktionen eines Frameworks zu vergessen oder auch nur einen bestimmten Teil.  \n\n  Mit Super Kung Vue kannst du dein Wissen Testen und evtl. auch was neues dazu lernen. \n\n  In weiteren Updates soll der Schwierigkeitsgrad auswählbar sein.  Fragen basierend auf dem eigenen Wissen und vorherig beantworteten Fragen, sollen von der angebundenen KI ausgewählt werden.",
 			"leadMagnet": "Du wolltest einen Artikel lesen und musstest deine Kontaktdaten abgeben, um ihn zu lesen. nervig oder? Ich habe so einen lead magneten gecoded. \n\n Die SPA ermöglicht die gezielte Platzierung eines Lead-Magnet-Links zu Artikeln, Whitepapers oder anderen von megorei oder einer Werbeagentur erstellten Inhalten. \n\n Interessierte Kunden können auf den Link klicken, hinterlassen ihre Kontaktdaten und erhalten automatisch eine Bestätigungs-E-Mail. Mit einen Link zur Download-Seite. \n\n Dieses Verfahren dient dazu, potenziellen Kunden Zugang zu relevanten Inhalten zu verschaffen und wichtige Kontaktinformationen für gezielte Marketingstrategien zu sammeln.",
 			"megoreiScheduler": "Um den Benutzer*innen einen möglichst komfortablen Weg zu ermöglichen, mit der megorei Software GmbH einen Termin zu vereinbaren, wurde eine Web-SPA in Auftrag gegeben. Zum Zeitpunkt des Auftrags gab es nur eine E-Mail-Adresse an die man sich wenden konnte. \n\n Bei der Implementierung wurde auf Benutzerfreundlichkeit, Sicherheit und Skalierbarkeit geachtet. Außerdem musste die Corporate Identity bei der Gestaltung berücksichtigt werden. \n\n ***Das Logo und die Texte mussten geändert werden.",
-			"cocktailBar": "Entwicklung eines Minimal Viable Products (MVP) für eine lokale Bar, um ein Reservierungs- und Bestellsystem zu implementieren. Kunden*innen konnten Reservierungen vornehmen und ihre ersten Getränke im Voraus bestellen. Jedoch wurde das Projekt aus verschiedenen Gründen nicht fortgesetzt."
+			"cocktailBar": "Entwicklung eines Minimal Viable Products (MVP) für eine lokale Bar, um ein Reservierungs- und Bestellsystem zu implementieren. Kunden*innen konnten Reservierungen vornehmen und ihre ersten Getränke im Voraus bestellen. Jedoch wurde das Projekt aus verschiedenen Gründen nicht fortgesetzt.",
+			"kitaSozialermaeßigung": "Vollständige Neuentwicklung eines Fachverfahrens und Online-Antrags zur Bearbeitung der KiTa-Sozialermäßigung."
 		}
 	}
 }

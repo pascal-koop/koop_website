@@ -58,5 +58,29 @@
 		"image": "/skills-mysql.svg",
 		"alt": "My SQL logo",
 		"link": "https://www.mysql.com/"
+	},
+	{
+		"name": "Quasar",
+		"image": "/skills-quasar.svg",
+		"alt": "Quasar logo",
+		"link": "https://quasar.dev/"
+	},
+	{
+		"name": "Storybook",
+		"image": "/skills-storybook.svg",
+		"alt": "Storybook logo",
+		"link": "https://storybook.js.org/"
+	},
+	{
+		"name": "Playwright",
+		"image": "/skills-playwrite.svg",
+		"alt": "Playwright logo",
+		"link": "https://playwright.dev/"
+	},
+	{
+		"name": "Directus",
+		"image": "/skills-directus.svg",
+		"alt": "Directus logo",
+		"link": "https://directus.io/"
 	}
 ]

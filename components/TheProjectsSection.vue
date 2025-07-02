@@ -2,16 +2,20 @@
 	import projects from '../assets/projects/projects.json';
 
 	const { t } = useI18n();
+	const showModal = ref(false);
+	const selectedProject = ref<Project | null>(null);
 
 	interface Project {
 		title: string;
 		previewLarge: string;
 		tech: string[];
 		description: string;
-		link: string;
+		link?: string;
 		format: string;
 		liveLink?: string;
 		liveLinkText?: string;
+		companyLink?: string;
+		companyLinkText?: string;
 	}
 
 	const projectsArray: Ref<[string, Project][]> = computed(() => Object.entries(projects));
@@ -21,6 +25,11 @@
 			description: t(`${value['description']}`)
 		}))
 	);
+
+	const openModal = (project: Project) => {
+		selectedProject.value = project;
+		showModal.value = true;
+	};
 </script>
 
 <style>
@@ -56,8 +65,9 @@
 				height="285.3"
 				sizes="sm:285.3px md:400px lg:500px xl:600px"
 				alt="work-preview-image"
-				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage"
-				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast" />
+				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage cursor-pointer hover:opacity-90 transition-opacity"
+				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast"
+				@click="openModal(project)" />
 			<div class="work-tech-stack flex flex-col md:mx-8 my-6">
 				<h2
 					class="work-card-subtitle font-neueRegrade text-4xl font-bold text-textDark uppercase"
@@ -69,6 +79,7 @@
 
 				<p class="work-card-text font-rota text-xl text-textDark my-6 leading-relaxed">{{ project.description }}</p>
 				<NuxtLink
+					v-if="project.link"
 					:to="project.link"
 					target="_blank"
 					class="work-card-link font-rota font-normal text-lg text-textDark hover:underline uppercase"
@@ -86,7 +97,21 @@
 					class="work-card-link font-rota font-normal text-lg text-textDark hover:underline uppercase"
 					>{{ project.liveLinkText }}
 				</NuxtLink>
+				<NuxtLink
+					v-if="project.companyLink"
+					:to="project.companyLink"
+					target="_blank"
+					class="work-card-link font-rota font-normal text-lg text-textDark hover:underline uppercase"
+					>{{ project.companyLinkText }}
+				</NuxtLink>
 			</div>
 		</div>
+
+		<ImageModal
+			v-model="showModal"
+			:image-src="selectedProject?.previewLarge || ''"
+			:image-format="selectedProject?.format || ''"
+			:image-alt="selectedProject?.title || ''"
+		/>
 	</section>
 </template>

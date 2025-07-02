@@ -23,6 +23,7 @@
 	onUnmounted(() => {
 		window.removeEventListener('scroll', handleScroll);
 	});
+	const currentYear = new Date().getFullYear();
 </script>
 
 <style></style>
@@ -39,7 +40,7 @@
 		<p
 			:style="{ transform: `translateY(${-scrollPosition}px)` }"
 			class="inline-block text-textLight text-2xl md:text-3xl font-neueRegrade font-medium"
-			>2024</p
+			>{{ currentYear }}</p
 		>
 		<div class="h-svh flex items-center justify-center md:justify-end">
 			<div class="absolute p-1 md:pl-0 md:mt-6 md:flex md:flex-col introduction-content md:gap-7">

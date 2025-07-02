@@ -38,29 +38,11 @@ watch(openMenu, (newValue) => {
 		openMenu.value = false;
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	};
+
+
 </script>
 
-<style>
-	.active .line-1 {
-		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px] right-[0.75px];
-	}
 
-	.mobile-nav.active {
-		@apply flex flex-col  h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
-	}
-
-	.mobile-nav-link.active {
-		@apply animate-slideInFromTop flex text-[2.5rem] font-semibold text-textLight relative;
-	}
-
-	.mobile-enter-active {
-		@apply animate-slideInFromLeft;
-	}
-
-	.mobile-leave-active {
-		@apply animate-slideOutToLeft;
-	}
-</style>
 
 <template>
 	<nav class="fixed top-0 z-30 flex flex-row items-center justify-between h-20 py-4 w-svw bg-bglight max-w-[1500px]">
@@ -106,13 +88,13 @@ watch(openMenu, (newValue) => {
 						:to="switchLocalePath(locale.code)"
 						:class="{ active: openMenu }"
 						class="lg:inline font-rota">
-						<img
+						<!-- <img
 							width="35"
 							height="35"
 							src="/localizeDark.svg"
 							:alt="locale.code"
-							class="w-3 h-[3.8rem] lg:min-w-7  text-textlight lg:inline  lg:h-[1.3rem]" />
-						<p class="font-rota text-[1rem] inline">{{ locale.code }}</p>
+							class="w-3 h-[3.8rem] lg:min-w-7  text-textlight lg:inline  lg:h-[1.3rem]" /> -->
+						<p class="font-rota text-[1rem] inline font-bold" >DE / EN</p>
 					</NuxtLink>
 				</li>
 			</ul>
@@ -157,3 +139,24 @@ watch(openMenu, (newValue) => {
 		</Transition>
 	</nav>
 </template>
+<style>
+	.active .line-1 {
+		@apply -rotate-[58deg] translate-x-[1px] translate-y-[17px] right-[0.75px];
+	}
+
+	.mobile-nav.active {
+		@apply flex flex-col  h-svh w-svw z-20 bg-bgdark top-[4.5rem] overflow-y-auto;
+	}
+
+	.mobile-nav-link.active {
+		@apply animate-slideInFromTop flex text-[2.5rem] font-semibold text-textLight relative;
+	}
+
+	.mobile-enter-active {
+		@apply animate-slideInFromLeft;
+	}
+
+	.mobile-leave-active {
+		@apply animate-slideOutToLeft;
+	}
+</style>

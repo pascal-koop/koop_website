@@ -25,7 +25,7 @@
 				height="600"
 				sizes="sm:400px md:500px lg:600px xl:700px"
 				alt="A picture of Pascal outside near water in summer" />
-			<div class="grid justify-center grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
+			<div class="grid justify-center lg:grid-cols-3 xxs:grid-cols-2 gap-9 mt-14 mx-auto grid-flow-dense max-w-fit">
 				<div
 					v-for="skill in skills"
 					:key="skill.name"
@@ -40,7 +40,7 @@
 							loading="lazy"
 							width="48"
 							height="48"
-							class="skill-img mr-4 h-[3rem] md:grayscale md:group-hover:grayscale-0" />
+							class="skill-img mr-4 h-[3rem] lg:grayscale lg:group-hover:grayscale-0" />
 						<h3 class="font-rota text-[1rem] uppercase">{{ skill.name }}</h3>
 					</NuxtLink>
 				</div>
