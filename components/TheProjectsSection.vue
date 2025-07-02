@@ -27,6 +27,9 @@
 	);
 
 	const openModal = (project: Project) => {
+		if(window.innerWidth < 768) {
+			return;
+		}
 		selectedProject.value = project;
 		showModal.value = true;
 		document.body.style.overflow = 'hidden';
@@ -65,9 +68,9 @@
 				class="work-card-img mx-auto mt-8 lg:mt-auto mb-5 lg:mb-0 lg:ml-20 lg:mx-5 lg:px-0 rounded-t-lg shadow-cardImage cursor-pointer hover:opacity-90 transition-opacity"
 				style="image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast"
 				@click="openModal(project)" />
-			<div class="work-tech-stack flex flex-col md:mx-8 my-6">
+			<div class="work-tech-stack flex flex-col md:mx-8 my-6 break-words">
 				<h2
-					class="work-card-subtitle font-neueRegrade text-4xl font-bold text-textDark uppercase"
+					class="work-card-subtitle font-neueRegrade text-4xl font-bold text-textDark uppercase hyphens-manual"
 					>{{ project.title }}&nbsp;
 				</h2>
 					<h3 class="work-tech-stack-text font-rota text-base text-textDark uppercase inline-block">{{
