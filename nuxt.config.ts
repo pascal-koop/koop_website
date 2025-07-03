@@ -13,6 +13,12 @@ export default defineNuxtConfig({
 	css: ['animate.css'],
 	image: {
 		quality: 100,
+		screens: {
+			md: 768,
+			lg: 1024,
+			xl: 1280,
+			'2xl': 1536,
+		}
 	},
 	ssr: false,
 	i18n: {
