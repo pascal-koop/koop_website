@@ -3,6 +3,14 @@
 	const lastScrollTop = ref<number>(0);
 	const SCROLL_THRESHOLD = 100;
 	const IMAGE_OPACITY_FADE_RATE = 375;
+
+	const currentText = computed(() => {
+		if (window.innerWidth < 768) return 'frontend';
+		if (scrollPosition.value > 180) return 'software';
+		if (scrollPosition.value > 80) return 'web';
+		return 'frontend';
+	});
+
 	const imageOpacity = computed<number>(() => {
 		const opacity = Math.max(0, 1 - scrollPosition.value / IMAGE_OPACITY_FADE_RATE);
 		return opacity;
@@ -11,8 +19,8 @@
 
 	const handleScroll = (): void => {
 		const scrollTop = window.scrollY || document.documentElement.scrollTop;
-		scrollPosition.value = scrollTop; // Update the scroll position
-		lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop; // Update the last scroll position
+		scrollPosition.value = scrollTop;
+		lastScrollTop.value = scrollTop <= 0 ? 0 : scrollTop;
 		scrollPosition.value > SCROLL_THRESHOLD ? (userIsScrolling.value = true) : (userIsScrolling.value = false);
 	};
 
@@ -26,7 +34,34 @@
 	const currentYear = new Date().getFullYear();
 </script>
 
-<style></style>
+<style scoped>
+.text-transition {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.text-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.text-visible {
+  opacity: 1;
+}
+
+.text-container {
+  position: relative;
+  display: inline-block;
+}
+
+.absolute-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+</style>
 
 <template>
 	<section
@@ -39,21 +74,26 @@
 		>
 		<p
 			:style="{ transform: `translateY(${-scrollPosition}px)` }"
-			class="inline-block text-textLight text-2xl md:text-3xl font-neueRegrade font-medium"
+			class=" inline-block text-textLight text-2xl md:text-3xl font-neueRegrade font-medium"
 			>{{ currentYear }}</p
 		>
-		<div class="h-svh flex items-center justify-center md:justify-end">
+		<div class="h-svh flex items-center justify-center">
 			<div class="absolute p-1 md:pl-0 md:mt-6 md:flex md:flex-col introduction-content md:gap-7">
 				<h1
 					:style="{ transform: `translateX(${scrollPosition}px)` }"
-					class="z-10 text-5xl md:text-7xl title text-textLight font-neueRegrade font-bold uppercase ">
-					front <span class="md:ml-48 z-10">-end</span>
+					class=" z-10 text-5xl md:text-7xl title text-textLight font-neueRegrade font-bold uppercase">
+					<div class="text-container">
+						<span :class="['text-transition', currentText === 'frontend' ? 'text-visible' : 'text-hidden']">front <span class="md:ml-48 z-10">-end</span></span>
+						<span :class="['text-transition absolute-text', currentText === 'web' ? 'text-visible' : 'text-hidden']">web</span>
+						<span  :class="['text-transition absolute-text', currentText === 'software' ? 'text-visible software ' : 'text-hidden']">personal</span>
+					</div>
 				</h1>
 				<h1
 					:style="{ transform: `translateX(${-scrollPosition}px)` }"
 
 					class="z-10 text-5xl md:text-7xl font-neueRegrade font-bold title text-textLight top-6 md:self-end uppercase">
-					developer
+					<span v-if="currentText === 'frontend' || currentText === 'web'">developer</span>
+					<span v-if="currentText === 'software'" :class="[currentText === 'software' ? 'text-visible software' : 'text-hidden']">development</span>
 				</h1>
 				<NuxtImg
 					class="absolute md:top-1/2 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-[54%] z-1 hidden md:block rounded-lg"
